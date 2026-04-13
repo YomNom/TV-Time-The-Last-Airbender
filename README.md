@@ -34,6 +34,8 @@ Users can filter data by season and show or just see the data for the show as a 
 
 ### Cast in each episode
 
+### Character Profiles
+
 ## What Each Person Worked On
 
 - **Quoc Huynh [kiq2908]:** 
@@ -41,5 +43,3 @@ Users can filter data by season and show or just see the data for the show as a 
 - **Dylan Francis [dylfrancis]:** 
 - **Joey Yong [YomNom]:** 
 - **Kaleab Alemu [kaleabtesfayes]:** 
-
-### Character Profiles
