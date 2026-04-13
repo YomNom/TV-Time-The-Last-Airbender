@@ -18,7 +18,7 @@ This analysis is performed to understand more about the structure of the show, s
 > 2.  Launch a local web server in the root directory (e.g., `python -m http.server 8000`).
 > 3.  Navigate to `http://localhost:8000` via web browser.
 
-## [Data]()
+## [Data](https://avatar.fandom.com/wiki/Category:Avatar:_The_Last_Airbender_episode_transcripts)
 
 ### Processing
 
