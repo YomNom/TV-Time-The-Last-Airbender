@@ -12,24 +12,27 @@
     <!-- Season Filter -->
     <div id="season-filter">
         <p><strong>SEASON FILTER</strong></p>
-        <div class="season-actions">
-            <button id="all-season" type="button">Show All</button>
-        </div>
         <div class="season-select">
+            <button id="all-season" type="button" onclick="selectAllSeasons()">Show All</button>
             <label class="season-toggle">
-                <input type="checkbox" name="season-select" value="season1" checked>
+                <input type="checkbox" name="season-select" value="1" checked>
                 <span>Season 1</span>
             </label>
             <label class="season-toggle">
-                <input type="checkbox" name="season-select" value="season2" checked>
+                <input type="checkbox" name="season-select" value="2" checked>
                 <span>Season 2</span>
             </label>
             <label class="season-toggle">
-                <input type="checkbox" name="season-select" value="season3" checked>
+                <input type="checkbox" name="season-select" value="3" checked>
                 <span>Season 3</span>
             </label>
         </div>
     </div>
+
+    <section id="season-stats">
+        <p><strong>SEASON STATS</strong></p>
+        <div id="season-stats-content"></div>
+    </section>
 
     <script src="js/d3.v6.min.js"></script>
 

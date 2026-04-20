@@ -1,10 +1,11 @@
 
-body {
-    /* Photo by <a href="https://unsplash.com/@roborobs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robynne O</a> on <a href="https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a */ 
+body { /* WILL UNCOMMENT LATER */ 
+    /* Photo by <a href="https://unsplash.com/@roborobs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robynne O</a> on <a href="https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a 
     background-image: url('../images/robynne-o-iVYTAfsN9hk-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    */
 }
 
 #season-filter {
@@ -13,7 +14,7 @@ body {
     border-radius: 5px;
 }
 
-.all-season {
+#all-season {
     background-color: #b1591a;
     border: none;
     color: white;
@@ -24,7 +25,7 @@ body {
     font-size: 16px;
 }
 
-.season-select {
+.season-toggle {
     background-color: #f0a500;
     border: none;
     color: white;
