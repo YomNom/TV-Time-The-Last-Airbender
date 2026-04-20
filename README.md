@@ -26,6 +26,15 @@ This analysis is performed to understand more about the structure of the show, s
 
 ## Graphs, Charts, and other Visualizations
 
+Overall Stats: Total number of lines, Episodes, total number of char, 
+
+Word cloud for what character tends to say
+
+Who characters talk to 
+
+Ranking for the number of lines
+- character profiles
+
 ### Filter
 
 Users can filter data by season and show or just see the data for the show as a whole. Users can select one episode or > 1 season. However, only one episode can be selected at a time. 
