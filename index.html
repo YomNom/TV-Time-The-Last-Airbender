@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Avatar: The Last Airbender Script Analysis</title>
-    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+    <!-- Season Filter -->
+    <div id="season-filter">
+        <p><strong>SEASON FILTER</strong></p>
+        <div class="season-actions">
+            <button id="all-season" type="button">Show All</button>
+        </div>
+        <div class="season-select">
+            <label class="season-toggle">
+                <input type="checkbox" name="season-select" value="season1" checked>
+                <span>Season 1</span>
+            </label>
+            <label class="season-toggle">
+                <input type="checkbox" name="season-select" value="season2" checked>
+                <span>Season 2</span>
+            </label>
+            <label class="season-toggle">
+                <input type="checkbox" name="season-select" value="season3" checked>
+                <span>Season 3</span>
+            </label>
+        </div>
+    </div>
+
     <script src="js/d3.v6.min.js"></script>
 
     <script src="js/main.js"></script>

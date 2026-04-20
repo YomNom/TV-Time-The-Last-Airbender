@@ -1,0 +1,36 @@
+
+body {
+    /* Photo by <a href="https://unsplash.com/@roborobs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robynne O</a> on <a href="https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a */ 
+    background-image: url('../images/robynne-o-iVYTAfsN9hk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#season-filter {
+    margin: 20px;
+    text-align: start;
+    border-radius: 5px;
+}
+
+.all-season {
+    background-color: #b1591a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.season-select {
+    background-color: #f0a500;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
