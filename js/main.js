@@ -17,6 +17,7 @@ Promise.all([
     seasonFilterArray.forEach(cb => cb.checked = true);
 
     updateSeasonStats();
+    initChordDiagram(data);
 
     seasonFilterArray.forEach(cb => {
         cb.addEventListener('change', updateSeasonStats);
@@ -41,6 +42,7 @@ function updateSeasonStats() {
     const selectedSeasons = getSelectedSeasons();
     const filteredData = getDataForSeason(appData, selectedSeasons);
     renderSeasonStats(filteredData);
+    if (typeof updateChordDiagram === 'function') updateChordDiagram(filteredData);
 }
 
 /*

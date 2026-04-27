@@ -35,3 +35,56 @@ body { /* WILL UNCOMMENT LATER */
     border-radius: 5px;
     font-size: 16px;
 }
+
+/* ── Chord Diagram ───────────────────────────────────── */
+
+#chord-section {
+    margin: 20px;
+}
+
+.chord-description {
+    color: #aaa;
+    font-size: 13px;
+    max-width: 700px;
+    margin-bottom: 12px;
+}
+
+#chord-controls {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#chord-controls label {
+    color: #ddd;
+    margin-right: 6px;
+}
+
+#chord-controls select {
+    background-color: #2a2a2a;
+    color: #eee;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#chord-diagram {
+    display: inline-block;
+}
+
+/* ── Tooltip ─────────────────────────────────────────── */
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background: rgba(20, 20, 20, 0.9);
+    color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    pointer-events: none;
+    z-index: 100;
+    border: 1px solid #555;
+    line-height: 1.5;
+}

@@ -34,8 +34,25 @@
         <div id="season-stats-content"></div>
     </section>
 
+    <!-- Character Interaction Chord Diagram -->
+    <section id="chord-section">
+        <p><strong>CHARACTER INTERACTIONS</strong></p>
+        <p class="chord-description">
+            Chord diagram showing how often the top characters speak with each other.
+            Arc Size = Total Exchanges
+            Ribbon Thickness = Exchanges between that pair.
+            Use the season filter above or the episode selector to explore how interactions change over the series.
+        </p>
+        <div id="chord-controls">
+            <label for="chord-episode-select">Episode: </label>
+            <select id="chord-episode-select"></select>
+        </div>
+        <div id="chord-diagram"></div>
+    </section>
+
     <script src="js/d3.v6.min.js"></script>
 
+    <script src="js/chordDiagram.js"></script>
     <script src="js/main.js"></script>
 
     <div id="tooltip"></div>
