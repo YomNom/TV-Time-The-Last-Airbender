@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
     <!-- Season Filter -->
     <div id="season-filter">
         <p><strong>SEASON FILTER</strong></p>
@@ -16,23 +16,18 @@
             <button id="all-season" type="button" onclick="selectAllSeasons()">Show All</button>
             <label class="season-toggle">
                 <input type="checkbox" name="season-select" value="1" checked>
-                <span>Season 1</span>
+                <span>Book 1: Water</span>
             </label>
             <label class="season-toggle">
                 <input type="checkbox" name="season-select" value="2" checked>
-                <span>Season 2</span>
+                <span>Book 2: Earth</span>
             </label>
             <label class="season-toggle">
                 <input type="checkbox" name="season-select" value="3" checked>
-                <span>Season 3</span>
+                <span>Book 3: Fire</span>
             </label>
         </div>
     </div>
-
-    <section id="season-stats">
-        <p><strong>SEASON STATS</strong></p>
-        <div id="season-stats-content"></div>
-    </section>
 
     <section id="phrase-explorer">
         <p><strong>PHRASE LIFECYCLE EXPLORER</strong></p>
@@ -53,11 +48,47 @@
         </div>
     </section>
 
-    <script src="js/d3.v6.min.js"></script>
-    <script src="js/phrase-lifecycle-explorer.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Level 2 Option 1: What do characters say? -->
+    <section id="character-words">
+        <header class="section-header">
+            <h2>What do characters say?</h2>
+            <p class="section-subtitle">Pick a character to see the words and phrases they use most. Use the season filter above to scope the analysis.</p>
+        </header>
 
-    <div id="tooltip"></div>
+        <div id="character-picker" class="character-picker"></div>
+
+        <div class="character-words-grid">
+            <article class="panel panel-cloud">
+                <header class="panel-header">
+                    <h3>Word Cloud</h3>
+                    <p class="panel-sub" id="cloud-caption">Top words after removing common stop-words.</p>
+                </header>
+                <div id="word-cloud" class="word-cloud"></div>
+            </article>
+
+            <article class="panel panel-bars">
+                <header class="panel-header">
+                    <h3>Top Words</h3>
+                    <p class="panel-sub">Frequency of each word in this character's lines.</p>
+                </header>
+                <div id="top-words" class="top-words"></div>
+            </article>
+
+            <article class="panel panel-phrases">
+                <header class="panel-header">
+                    <h3>Common Phrases</h3>
+                    <p class="panel-sub">Multi-word phrases (2-4 words) this character repeats most.</p>
+                </header>
+                <div id="top-phrases" class="top-phrases"></div>
+            </article>
+        </div>
+    </section>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jasondavies/d3-cloud@1.2.7/build/d3.layout.cloud.js"></script>
+    <script src="js/text-analysis.js"></script>
+    <script src="js/character-words.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
