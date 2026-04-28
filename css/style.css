@@ -17,21 +17,46 @@
     background-size: cover;
 }
 
+* { box-sizing: border-box; }
+
 body {
     margin: 0;
     padding: 0;
+    color: var(--ink);
+    line-height: 1.5;
+    min-height: 100vh;
+    
 }
 
-#col-direction {
+#col-direction { /* to stack elements vertically */
     display: flex;
     flex-direction: column;
 }
 
-#row-direction {
+#row-direction { /* to stack elements horizontally */
     display: flex;
     flex-direction: row;
 }
 
+/* --- PAGE HEADER --- */
+#page-header {
+    text-align: center;
+    padding: 40px 20px 24px;
+    border-bottom: 1px solid var(--border);
+}
+#page-header .logo {
+    max-width: 360px;
+    width: 60%;
+    height: auto;
+}
+#page-header .subtitle {
+    color: var(--ink-dim);
+    margin: 12px auto 0;
+    max-width: 640px;
+}
+
+
+/* --- "Navigation" Bar --- */
 #show-intro {
     background-color: #ffe5bd;
     padding: 25px;
@@ -229,6 +254,216 @@ body {
     display: block;
 }
 
+/* --- Level 2: Character Words section --- */
+#character-words {
+    margin: 24px;
+    padding: 24px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+.section-header h2 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    color: var(--air);
+}
+.section-header .section-subtitle {
+    color: var(--ink-dim);
+    margin: 6px 0 18px;
+}
+
+/* Character chips */
+.character-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.character-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--panel-2);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 120ms, border-color 120ms, transform 120ms;
+}
+.character-chip:hover {
+    background: #2a3852;
+    border-color: var(--fire-bright);
+}
+.character-chip.is-selected {
+    background: var(--fire);
+    border-color: var(--fire-bright);
+    color: white;
+    font-weight: 600;
+}
+.character-chip.is-empty {
+    opacity: 0.4;
+}
+.character-chip.is-empty.is-selected {
+    opacity: 0.85;
+}
+.character-chip .chip-count {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 1px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* Grid of three panels */
+.character-words-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "cloud bars"
+        "phrases bars";
+    gap: 16px;
+}
+.panel-cloud { grid-area: cloud; }
+.panel-bars { grid-area: bars; }
+.panel-phrases { grid-area: phrases; }
+
+@media (max-width: 900px) {
+    .character-words-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cloud"
+            "bars"
+            "phrases";
+    }
+}
+
+.panel {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+.panel-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--fire-bright);
+}
+.panel-header .panel-sub {
+    margin: 4px 0 12px;
+    color: var(--ink-dim);
+    font-size: 13px;
+}
+.panel .empty {
+    color: var(--ink-dim);
+    font-style: italic;
+    margin: 8px 0 0;
+}
+
+/* Word cloud */
+.word-cloud {
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.word-cloud svg { display: block; }
+
+/* Top words bars */
+.bar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.bar-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 40px;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    font-size: 13px;
+}
+.bar-label { color: var(--ink); font-weight: 600; }
+.bar-track {
+    background: rgba(255, 255, 255, 0.06);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bar-fill {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--fire), var(--fire-bright));
+}
+.bar-count { color: var(--ink-dim); text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Phrases */
+.phrase-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+}
+.phrase-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+.phrase-text { color: var(--ink); font-style: italic; }
+.phrase-count { color: var(--fire-bright); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* --- CHAR PROFILE LIST --- */
+#char-list-container {
+  background-color: rgba(243, 143, 28, 0.603);
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 1px 10px 0px 10px;
+  height: auto;
+  width: 300px;
+}
+
+.char-individual-display {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+}
+
+.char-list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.char-profile {
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+button.char-profile {
+    width: 100%;
+    border: none;
+    font: inherit;
+    text-align: left;
+    appearance: none;
+}
+
+.char-profile:hover {
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
 #tooltip {
     position: absolute;
     background: rgba(0, 0, 0, 0.78);
@@ -255,39 +490,4 @@ body {
 .axis-label {
     font-size: 11px;
     fill: #777;
-}
-
-/* --- CHAR PROFILE LIST --- */
-#char-list-container {
-  background-color: rgba(243, 143, 28, 0.603);
-  border-radius: 8px;
-  margin-left: 20px;
-  padding: 1px 10px 0px 10px;
-  width: 300px;
-}
-
-.char-individual-display {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin: 20px;
-}
-
-.char-list {
-  height: 500px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.char-profile {
-  padding: 10px;
-  background: #f4f4f4;
-  border-radius: 8px;
-}
-
-.char-profile:hover {
-  background: #e0e0e0;
-  cursor: pointer;
 }

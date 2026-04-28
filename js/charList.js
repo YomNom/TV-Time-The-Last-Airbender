@@ -18,24 +18,28 @@ class charList {
 
         vis.parentElement.appendChild(vis.container);
 
-        vis.updateVis();
-    }
-
-    updateVis() {
-        let vis = this;
-
         vis.renderVis();
     }
 
     renderVis() {
         let vis = this;
+        let selectedCharacter = window.CharacterWords?.getSelectedCharacter?.() || vis.data[0]?.name || null;
+
+        if (selectedCharacter && !vis.data.some(char => char.name === selectedCharacter) && vis.data.length) {
+            selectedCharacter = vis.data[0].name;
+            window.CharacterWords?.setSelectedCharacter?.(selectedCharacter);
+        }
 
         // Clear existing content
         vis.container.innerHTML = "";
 
         vis.data.forEach(char => {
-            const card = document.createElement("div");
+            const card = document.createElement("button");
+            card.type = "button";
             card.classList.add("char-profile");
+            if (char.name === selectedCharacter) {
+                card.classList.add("is-selected");
+            }
 
             card.innerHTML = `
                 <h3>${char.name}</h3>
@@ -43,9 +47,11 @@ class charList {
                 <p>Episodes: ${char.episodes.join(", ")}</p>
             `;
 
-            // Optional: click interaction
+            // click interaction
             card.addEventListener("click", () => {
-                console.log(char); // replace with real behavior
+                window.CharacterWords?.setSelectedCharacter?.(char.name);
+                vis.container.querySelectorAll(".char-profile").forEach(el => el.classList.remove("is-selected"));
+                card.classList.add("is-selected");
             });
 
             vis.container.appendChild(card);

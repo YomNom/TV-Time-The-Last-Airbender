@@ -25,9 +25,11 @@ Promise.all([
     charObjList = createCharObjList(charAndTheirLines); // for display
     console.log("CHAR OBJ LIST:", charObjList);
 
-    updateDataBySeason();
-    initChordDiagram(data);
-    phraseExplorer.init(data);
+    if (window.CharacterWords) CharacterWords.init(scriptData);
+
+    updateAll();
+    // initChordDiagram(data);
+    //phraseExplorer.init(data);
 
     seasonFilterArray.forEach(cb => {
         cb.addEventListener('change', handleSeasonSelectionChange);
@@ -52,14 +54,14 @@ function renderDisplay(data) {
 
     // Reuse existing list container to avoid stacking duplicate panels and scroll jumps.
     charlist.data = charObjList;
-    charlist.updateVis();
+    charlist.renderVis();
 }
 
 // Displays Data For All Seasons
 function selectAllSeasonData() {
     const seasonFilterArray = Array.from(document.querySelectorAll('input[name="season-select"]'));
     seasonFilterArray.forEach(cb => cb.checked = true);
-    updateDataBySeason();
+    updateAll();
 }
 
 // Retrieves what seasons are selected by the user 
@@ -78,15 +80,28 @@ function handleSeasonSelectionChange(event) {
         return;
     }
 
-    updateDataBySeason();
+    updateAll();
 }
 
 // Updates the data based on the seasons selected by the user
-function updateDataBySeason() {
+function updateAll() {
     console.log("scriptData:", scriptData);
     const filteredData = allSelectedData(scriptData);
     console.log("filteredData:", filteredData);
     renderDisplay(filteredData);
+    
+    // After rendering the filtered char list, select the top character by line count
+    if (Array.isArray(charObjList) && charObjList.length) {
+        const topChar = charObjList[0].name;
+        if (window.CharacterWords && typeof window.CharacterWords.setSelectedCharacter === 'function') {
+            window.CharacterWords.setSelectedCharacter(topChar);
+        }
+        if (typeof charlist?.updateVis === 'function') {
+            charlist.updateVis();
+        }
+    }
+
+    if (window.CharacterWords) CharacterWords.update(filteredData);
 }
 
 // Filters and gets the data based on the seasons selected by the user
@@ -159,6 +174,8 @@ function createCharObjList(characters) {
         charObj.episodes = Array.from(charObj.episodes);
         charObjList.push(charObj);
     });
+
+    charObjList.sort((a, b) => b.lineCount - a.lineCount); // Sort characters by line count in descending order
 
     return charObjList;
 }
