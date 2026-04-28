@@ -5,6 +5,7 @@ class charList {
     constructor(_config, _data) {
         this.parentElement = document.querySelector(_config.parentElement);
         this.data = _data;
+        this.searchQuery = "";
 
         this.initVis();
     }
@@ -18,6 +19,16 @@ class charList {
 
         vis.parentElement.appendChild(vis.container);
 
+        // Wire up the search input (lives in index.html, hooked up exactly once).
+        const searchInput = document.getElementById("char-search");
+        if (searchInput && !searchInput.dataset.charSearchBound) {
+            searchInput.dataset.charSearchBound = "1";
+            searchInput.addEventListener("input", () => {
+                vis.searchQuery = searchInput.value.trim().toLowerCase();
+                vis.renderVis();
+            });
+        }
+
         vis.renderVis();
     }
 
@@ -30,10 +41,26 @@ class charList {
             window.CharacterWords?.setSelectedCharacter?.(selectedCharacter);
         }
 
+        // Rank is based on the full sorted ranking, so it stays meaningful when filtered.
+        const filtered = vis.searchQuery
+            ? vis.data.filter(c => c.name.toLowerCase().includes(vis.searchQuery))
+            : vis.data;
+
         // Clear existing content
         vis.container.innerHTML = "";
 
-        vis.data.forEach(char => {
+        if (!filtered.length) {
+            const empty = document.createElement("p");
+            empty.className = "char-list-empty";
+            empty.textContent = vis.searchQuery
+                ? `No characters match “${vis.searchQuery}”.`
+                : "No characters in this selection.";
+            vis.container.appendChild(empty);
+            return;
+        }
+
+        filtered.forEach(char => {
+            const rank = vis.data.indexOf(char) + 1;
             const card = document.createElement("button");
             card.type = "button";
             card.classList.add("char-profile");
@@ -42,9 +69,12 @@ class charList {
             }
 
             card.innerHTML = `
-                <h3>${char.name}</h3>
-                <p>Lines: ${char.lineCount}</p>
-                <p>Episodes: ${char.episodes.join(", ")}</p>
+                <span class="char-rank">#${rank}</span>
+                <span class="char-body">
+                    <h3>${char.name}</h3>
+                    <p>Lines: ${char.lineCount}</p>
+                    <p>Episodes: ${char.episodes.join(", ")}</p>
+                </span>
             `;
 
             // click interaction

@@ -81,14 +81,26 @@ button {
 #row-direction {
     display: grid;
     grid-template-columns: 320px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "list           characterWords"
+        "phraseExplorer phraseExplorer";
     gap: 18px;
     margin: 0 18px 18px;
     align-items: stretch;
 }
 
+#row-direction > #char-list-container { grid-area: list; }
+#row-direction > #character-words     { grid-area: characterWords; }
+#row-direction > #phrase-explorer     { grid-area: phraseExplorer; }
+
 @media (max-width: 1024px) {
     #row-direction {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "list"
+            "characterWords"
+            "phraseExplorer";
     }
 }
 
@@ -255,32 +267,74 @@ button {
 #char-list-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     background: var(--panel);
     border: 1px solid var(--border-soft);
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
     padding: 14px 14px 12px;
-    max-height: 720px;
+    min-height: 0;
     min-width: 0;
+    /* No max-height — height comes from the grid row, which is driven by
+       #character-words because the scroll list inside (.char-list) is taken
+       out of normal flow with position:absolute (see below) so it can't
+       inflate this column's intrinsic size. */
+    overflow: hidden;
 }
 
 #char-list-container > h3 {
-    margin: 0 0 4px;
+    flex: 0 0 auto;
+    margin: 0;
     font-size: 16px;
     color: var(--fire-deep);
     letter-spacing: 0.02em;
 }
 
-#char-list { min-height: 0; flex: 1 1 auto; }
+#char-search {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 8px 12px 8px 32px;
+    font-size: 13px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--paper) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23876a45' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>") 9px center / 16px no-repeat;
+    color: var(--ink);
+    outline: none;
+    font-family: inherit;
+}
+#char-search::placeholder { color: var(--ink-dim); }
+#char-search:focus {
+    border-color: var(--fire-bright);
+    box-shadow: 0 0 0 3px rgba(240, 165, 0, 0.22);
+}
 
+/* The wrapper rendered in the HTML; the JS appends a `.char-list` div inside it.
+   Acts as the containing block for the absolutely-positioned scroll region.
+   `flex: 1 1 0` claims the remaining vertical space without contributing to
+   intrinsic sizing of the parent (because the child is taken out of flow). */
+#char-list {
+    flex: 1 1 0;
+    min-height: 0;
+    position: relative;
+}
+
+/* The actual scroll-region created in JS — absolutely positioned so its huge
+   intrinsic content (60+ cards) does NOT bubble up and inflate the grid row. */
 .char-list {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    overflow-y: auto;
     padding-right: 4px;
-    min-height: 0;
+}
+
+.char-list-empty {
+    color: var(--ink-dim);
+    font-style: italic;
+    font-size: 13px;
+    margin: 8px 4px 0;
 }
 .char-list::-webkit-scrollbar       { width: 8px; }
 .char-list::-webkit-scrollbar-track { background: transparent; }
@@ -288,12 +342,16 @@ button {
 
 button.char-profile {
     width: 100%;
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
     border: 1px solid var(--border-soft);
     background: var(--panel-2);
     color: var(--ink);
     text-align: left;
     appearance: none;
-    padding: 10px 12px;
+    padding: 8px 10px;
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: background 120ms, border-color 120ms, transform 120ms;
@@ -301,16 +359,40 @@ button.char-profile {
     font: inherit;
 }
 
+.char-rank {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    padding: 4px 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--fire);
+    background: var(--paper);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-sm);
+    font-variant-numeric: tabular-nums;
+}
+
+.char-body {
+    display: block;
+    min-width: 0;
+}
+
 .char-profile h3 {
-    margin: 0 0 4px;
+    margin: 0 0 2px;
     font-size: 15px;
     color: var(--fire-deep);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .char-profile p {
     margin: 0;
     font-size: 12.5px;
     color: var(--ink-mid);
-    line-height: 1.4;
+    line-height: 1.35;
 }
 .char-profile p + p {
     color: var(--ink-dim);
@@ -334,6 +416,11 @@ button.char-profile {
 }
 .char-profile.is-selected h3 { color: #fff; }
 .char-profile.is-selected p  { color: rgba(255, 255, 255, 0.88); }
+.char-profile.is-selected .char-rank {
+    color: var(--fire-deep);
+    background: var(--air);
+    border-color: var(--fire-bright);
+}
 
 /* ============================================================
    Character-words section ("What do characters say?")
@@ -494,7 +581,7 @@ button.char-profile {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 18px;
+    margin: 0;
     padding: 18px 20px;
     background: var(--panel);
     border: 1px solid var(--border-soft);

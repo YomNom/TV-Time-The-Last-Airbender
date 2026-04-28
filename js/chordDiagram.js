@@ -175,9 +175,8 @@
                 d.angle > Math.PI ? 'rotate(180)' : ''
             ].join(''))
             .attr('text-anchor', d => d.angle > Math.PI ? 'end' : 'start')
-            .style('font-size', '11px')
-            .style('font-family', 'sans-serif')
-            .style('fill', '#ddd')
+            .style('font-size', '12px')
+            .style('font-weight', '600')
             .text(d => characters[d.index]);
 
         // ribbons connecting characters — thicker = more exchanges
