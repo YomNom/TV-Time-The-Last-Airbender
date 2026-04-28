@@ -17,6 +17,7 @@ Promise.all([
     seasonFilterArray.forEach(cb => cb.checked = true);
 
     updateSeasonStats();
+    initChordDiagram(data);
     phraseExplorer.init(data);
 
     seasonFilterArray.forEach(cb => {
@@ -42,6 +43,7 @@ function updateSeasonStats() {
     const selectedSeasons = getSelectedSeasons();
     const filteredData = getDataForSeason(appData, selectedSeasons);
     renderSeasonStats(filteredData);
+    if (typeof updateChordDiagram === 'function') updateChordDiagram(filteredData);
 }
 
 /*
