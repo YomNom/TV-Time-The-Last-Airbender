@@ -1,0 +1,2610 @@
+[
+  {
+    "id": "b1e1",
+    "title": "The Boy in the Iceberg",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 1,
+    "overall": 1,
+    "air_date": "February 21, 2005",
+    "production_code": "101",
+    "writer": "* Michael Dante DiMartino\n* Bryan Konietzko\nAdditional writing:\n* Aaron Ehasz\n* Peter Goldfinger\n* Josh Stolberg",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Sokka"
+      ],
+      "minor": [
+        "Kanna",
+        "Southern Water Tribe boy",
+        "Southern Water Tribe girl"
+      ],
+      "antagonists": [
+        "Iroh",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Southern Water Tribe",
+      "Shipwreck",
+      "Wolf Cove",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 223
+  },
+  {
+    "id": "b1e2",
+    "title": "The Avatar Returns",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 2,
+    "overall": 2,
+    "air_date": "February 21, 2005",
+    "production_code": "102",
+    "writer": "* Michael Dante DiMartino\n* Bryan Konietzko\nAdditional writing:\n* Aaron Ehasz\n* Peter Goldfinger\n* Josh Stolberg",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Sokka"
+      ],
+      "minor": [
+        "Kanna",
+        "Southern Water Tribe boy",
+        "Southern Water Tribe girl"
+      ],
+      "antagonists": [
+        "Iroh",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Southern Water Tribe",
+      "Wolf Cove",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 182
+  },
+  {
+    "id": "b1e3",
+    "title": "The Southern Air Temple",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 3,
+    "overall": 3,
+    "air_date": "February 25, 2005",
+    "production_code": "103",
+    "writer": "Michael Dante DiMartino",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka"
+      ],
+      "minor": [
+        "Gyatso",
+        "Pasang",
+        "Tashi"
+      ],
+      "antagonists": [
+        "Zhao",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Ketu Harbor",
+      "Southern Air Temple"
+    ],
+    "dialogue_line_count": 273
+  },
+  {
+    "id": "b1e4",
+    "title": "The Warriors of Kyoshi",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 4,
+    "overall": 4,
+    "air_date": "March 4, 2005",
+    "production_code": "104",
+    "writer": "Nick Malis",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Suki"
+      ],
+      "minor": [
+        "Foaming mouth guy",
+        "Koko",
+        "Kyoshi Warriors",
+        "Oyaji",
+        "Unagi"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation",
+        "Iroh",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Kyoshi Island",
+      "Suki's village",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 304
+  },
+  {
+    "id": "b1e5",
+    "title": "The King of Omashu",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 5,
+    "overall": 5,
+    "air_date": "March 18, 2005",
+    "production_code": "105",
+    "writer": "John O'Bryan",
+    "director": "Anthony Lioi",
+    "cast": {
+      "main": [
+        "Aang",
+        "Bumi (King of Omashu)",
+        "Katara",
+        "Momo",
+        "Sokka"
+      ],
+      "minor": [
+        "Appa",
+        "Cabbage merchant",
+        "Chamberlain",
+        "Flopsie",
+        "Earth Kingdom",
+        "Omashu captain"
+      ],
+      "antagonists": []
+    },
+    "locations": [
+      "Omashu",
+      "Omashu Royal Palace"
+    ],
+    "dialogue_line_count": 223
+  },
+  {
+    "id": "b1e6",
+    "title": "Imprisoned",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 6,
+    "overall": 6,
+    "air_date": "March 25, 2005",
+    "production_code": "106",
+    "writer": "Matthew Hubbard",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Haru",
+        "Katara",
+        "Sokka",
+        "Tyro"
+      ],
+      "minor": [
+        "Appa",
+        "Haru's mother",
+        "Momo",
+        "Old man",
+        "Tax collector",
+        "Earthbending",
+        "Zuko"
+      ],
+      "antagonists": [
+        "Fire Nation",
+        "Warden (prison rig)"
+      ]
+    },
+    "locations": [
+      "Mining village",
+      "Prison rig",
+      "Seaport village"
+    ],
+    "dialogue_line_count": 238
+  },
+  {
+    "id": "b1e7",
+    "title": "Winter Solstice, Part 1: The Spirit World",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 7,
+    "overall": 7,
+    "air_date": "April 8, 2005",
+    "production_code": "107",
+    "writer": "Aaron Ehasz",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Hei Bai",
+        "Iroh",
+        "Kay-fon",
+        "Momo",
+        "Senlin Village leader",
+        "Sokka",
+        "Zuko"
+      ],
+      "minor": [
+        "Earthbender captain",
+        "Fang"
+      ],
+      "antagonists": []
+    },
+    "locations": [
+      "Crescent Island",
+      "Crescent Island Fire Temple",
+      "Scorched forest",
+      "Senlin Village"
+    ],
+    "dialogue_line_count": 183
+  },
+  {
+    "id": "b1e8",
+    "title": "Winter Solstice, Part 2: Avatar Roku",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 8,
+    "overall": 8,
+    "air_date": "April 15, 2005",
+    "production_code": "108",
+    "writer": "Michael Dante DiMartino",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Roku",
+        "Sokka"
+      ],
+      "minor": [
+        "Kay-fon",
+        "Senlin Village leader",
+        "Shyu"
+      ],
+      "antagonists": [
+        "Fire Sages",
+        "Iroh",
+        "Zhao",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Crescent Island",
+      "Crescent Island Fire Temple",
+      "Mo Ce Sea",
+      "Senlin Village",
+      "Spirit World",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 221
+  },
+  {
+    "id": "b1e9",
+    "title": "The Waterbending Scroll",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 9,
+    "overall": 9,
+    "air_date": "April 29, 2005",
+    "production_code": "109",
+    "writer": "John O'Bryan",
+    "director": "Anthony Lioi",
+    "cast": {
+      "main": [
+        "Aang",
+        "Katara",
+        "Sokka"
+      ],
+      "minor": [
+        "Appa",
+        "Momo"
+      ],
+      "antagonists": [
+        "Fire Nation",
+        "Iroh",
+        "Oh",
+        "Pirate captain",
+        "Various pirates",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Pirate ship boutique",
+      "Seedy merchants pier",
+      "Waterfall lagoon"
+    ],
+    "dialogue_line_count": 223
+  },
+  {
+    "id": "b1e10",
+    "title": "Jet",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 10,
+    "overall": 10,
+    "air_date": "May 6, 2005",
+    "production_code": "110",
+    "writer": "James Eagan",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Jet",
+        "Katara",
+        "Sokka"
+      ],
+      "minor": [
+        "Appa",
+        "Longshot",
+        "Momo",
+        "Old Fire Nation civilian",
+        "Pipsqueak",
+        "Smellerbee",
+        "Sneers",
+        "The Duke"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation"
+      ]
+    },
+    "locations": [
+      "Gaipan",
+      "Treetop hideout"
+    ],
+    "dialogue_line_count": 292
+  },
+  {
+    "id": "b1e11",
+    "title": "The Great Divide",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 11,
+    "overall": 11,
+    "air_date": "May 20, 2005",
+    "production_code": "111",
+    "writer": "John O'Bryan",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Canyon guide",
+        "Gan Jin",
+        "Gan Jin leader",
+        "Gan Jin tribesman",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Zhang",
+        "Zhang leader"
+      ],
+      "minor": [
+        "Jin Wei",
+        "Wei Jin"
+      ],
+      "antagonists": [
+        "Canyon crawler"
+      ]
+    },
+    "locations": [
+      "Great Divide"
+    ],
+    "dialogue_line_count": 187
+  },
+  {
+    "id": "b1e12",
+    "title": "The Storm",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 12,
+    "overall": 12,
+    "air_date": "June 3, 2005",
+    "production_code": "112",
+    "writer": "Aaron Ehasz",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Fisherman",
+        "Gyatso",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Zuko"
+      ],
+      "minor": [
+        "Air Nomad boy",
+        "Bujing",
+        "Fisherman's wife",
+        "Jee",
+        "Jinju",
+        "Pasang",
+        "Tashi"
+      ],
+      "antagonists": [
+        "Ozai"
+      ]
+    },
+    "locations": [
+      "Cave",
+      "Fire Nation Royal Palace",
+      "Harbor town",
+      "Southern Air Temple"
+    ],
+    "dialogue_line_count": 277
+  },
+  {
+    "id": "b1e13",
+    "title": "The Blue Spirit",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 13,
+    "overall": 13,
+    "air_date": "June 17, 2005",
+    "production_code": "113",
+    "writer": "* Bryan Konietzko\n* Michael Dante DiMartino",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Zuko"
+      ],
+      "minor": [
+        "Appa",
+        "Herbalist",
+        "Iroh",
+        "Jee",
+        "Katara",
+        "Momo",
+        "Shinu",
+        "Sokka"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation",
+        "Yuyan Archers",
+        "Zhao"
+      ]
+    },
+    "locations": [
+      "Pohuai Stronghold",
+      "Taku"
+    ],
+    "dialogue_line_count": 144
+  },
+  {
+    "id": "b1e14",
+    "title": "The Fortuneteller",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 14,
+    "overall": 14,
+    "air_date": "September 23, 2005",
+    "production_code": "114",
+    "writer": "* John O'Bryan\n* Aaron Ehasz",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Meng",
+        "Momo",
+        "Sokka",
+        "Wu (fortuneteller)"
+      ],
+      "minor": [
+        "Calm man",
+        "Local villagers",
+        "Poi and Ping"
+      ],
+      "antagonists": []
+    },
+    "locations": [
+      "Makapu Village",
+      "Mt. Makapu"
+    ],
+    "dialogue_line_count": 331
+  },
+  {
+    "id": "b1e15",
+    "title": "Bato of the Water Tribe",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 15,
+    "overall": 15,
+    "air_date": "October 7, 2005",
+    "production_code": "115",
+    "writer": "Ian Wilcox",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Bato",
+        "Katara",
+        "Sokka"
+      ],
+      "minor": [
+        "Momo",
+        "Hakoda",
+        "Herbalist",
+        "Miyuki",
+        "Mother Superior",
+        "abbey",
+        "Wu (fortuneteller)"
+      ],
+      "antagonists": [
+        "Iroh",
+        "June",
+        "Nyla",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Abbey",
+      "Makapu Village",
+      "Taku",
+      "Tavern",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 267
+  },
+  {
+    "id": "b1e16",
+    "title": "The Deserter",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 16,
+    "overall": 16,
+    "air_date": "October 21, 2005",
+    "production_code": "116",
+    "writer": "Tim Hedrick",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Jeong Jeong",
+        "Katara",
+        "Sokka"
+      ],
+      "minor": [
+        "Appa",
+        "Chey",
+        "Guard captain",
+        "Lin Yee",
+        "Malu",
+        "Momo",
+        "Roku",
+        "Various Fire Nation citizens"
+      ],
+      "antagonists": [
+        "Fire Nation",
+        "Zhao"
+      ]
+    },
+    "locations": [
+      "Fire Nation colonial village",
+      "Jeong Jeong's camp",
+      "Roadside kiosk"
+    ],
+    "dialogue_line_count": 243
+  },
+  {
+    "id": "b1e17",
+    "title": "The Northern Air Temple",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 17,
+    "overall": 17,
+    "air_date": "November 4, 2005",
+    "production_code": "117",
+    "writer": "Elizabeth Welch Ehasz",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Katara",
+        "Mechanist",
+        "Sokka",
+        "Teo"
+      ],
+      "minor": [
+        "Appa",
+        "Earth Kingdom",
+        "Momo",
+        "Storyteller"
+      ],
+      "antagonists": [
+        "Fire Nation",
+        "Qin"
+      ]
+    },
+    "locations": [
+      "Northern Air Temple"
+    ],
+    "dialogue_line_count": 228
+  },
+  {
+    "id": "b1e18",
+    "title": "The Waterbending Master",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 18,
+    "overall": 18,
+    "air_date": "November 18, 2005",
+    "production_code": "118",
+    "writer": "Michael Dante DiMartino",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Arnook",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Pakku",
+        "Sokka",
+        "Yue",
+        "Zuko"
+      ],
+      "minor": [
+        "Li",
+        "Yagoda"
+      ],
+      "antagonists": [
+        "Oh",
+        "Pirate captain",
+        "Zhao"
+      ]
+    },
+    "locations": [
+      "Fire Nation",
+      "Northern Water Tribe",
+      "Agna Qel'a",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 232
+  },
+  {
+    "id": "b1e19",
+    "title": "The Siege of the North, Part 1",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 19,
+    "overall": 19,
+    "air_date": "December 2, 2005",
+    "production_code": "119",
+    "writer": "John O'Bryan",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Arnook",
+        "Hahn",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Pakku",
+        "Sokka",
+        "Yue"
+      ],
+      "minor": [
+        "La",
+        "Sangok",
+        "Tui",
+        "Water Tribe"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation",
+        "Zhao",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Northern Water Tribe",
+      "Agna Qel'a",
+      "Spirit Oasis"
+    ],
+    "dialogue_line_count": 192
+  },
+  {
+    "id": "b1e20",
+    "title": "The Siege of the North, Part 2",
+    "book": 1,
+    "book_name": "Water",
+    "episode": 20,
+    "overall": 20,
+    "air_date": "December 2, 2005",
+    "production_code": "120",
+    "writer": "Aaron Ehasz",
+    "director": "Dave Filoni",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Arnook",
+        "Iroh",
+        "Katara",
+        "La",
+        "Momo",
+        "Pakku",
+        "Sokka",
+        "Tui",
+        "Yue"
+      ],
+      "minor": [
+        "Azula",
+        "Baboon spirit",
+        "Hahn",
+        "Hei Bai",
+        "Ozai",
+        "Roku",
+        "Water Tribe"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation",
+        "Koh",
+        "Zhao",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Fire Nation Royal Palace",
+      "Northern Water Tribe",
+      "Agna Qel'a",
+      "Spirit Oasis",
+      "Spirit World",
+      "Wan Shi Tong's Library"
+    ],
+    "dialogue_line_count": 161
+  },
+  {
+    "id": "b2e1",
+    "title": "The Avatar State",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 1,
+    "overall": 21,
+    "air_date": "March 17, 2006",
+    "production_code": "201",
+    "writer": "* Elizabeth Welch Ehasz\n* Tim Hedrick\n* Aaron Ehasz\n* John O'Bryan",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Fong",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Zuko"
+      ],
+      "minor": [
+        "Fang",
+        "Kuruk",
+        "Kyoshi",
+        "Lo and Li",
+        "Pakku",
+        "Roku",
+        "Yangchen",
+        "Szeto"
+      ],
+      "antagonists": [
+        "Azula",
+        "Azula's ship captain"
+      ]
+    },
+    "locations": [
+      "Royal sloop",
+      "High Temple",
+      "General Fong's fortress",
+      "Northern Water Tribe",
+      "Southern Air Temple",
+      "Village resort",
+      "Zuko's ship"
+    ],
+    "dialogue_line_count": 215
+  },
+  {
+    "id": "b2e2",
+    "title": "The Cave of Two Lovers",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 2,
+    "overall": 22,
+    "air_date": "March 24, 2006",
+    "production_code": "202",
+    "writer": "Joshua Hamilton",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Chong",
+        "Iroh",
+        "Katara",
+        "Lily",
+        "Momo",
+        "Sokka",
+        "Song (villager)",
+        "Zuko"
+      ],
+      "minor": [
+        "Badgermole",
+        "Moku",
+        "Oma",
+        "Shu",
+        "Song's mother"
+      ],
+      "antagonists": [
+        "Fire Nation"
+      ]
+    },
+    "locations": [
+      "Cave of Two Lovers",
+      "Farming village",
+      "Farming village hospital",
+      "Omashu"
+    ],
+    "dialogue_line_count": 245
+  },
+  {
+    "id": "b2e3",
+    "title": "Return to Omashu",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 3,
+    "overall": 23,
+    "air_date": "April 7, 2006",
+    "production_code": "203",
+    "writer": "Elizabeth Welch Ehasz",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Bumi (King of Omashu)",
+        "Katara",
+        "Momo",
+        "Sokka"
+      ],
+      "minor": [
+        "Flopsie",
+        "Lo and Li",
+        "Michi",
+        "Shuzumu",
+        "Tom-Tom",
+        "Ukano",
+        "Yung (captain)"
+      ],
+      "antagonists": [
+        "Azula",
+        "Mai",
+        "Ty Lee"
+      ]
+    },
+    "locations": [
+      "Fire Nation circus",
+      "Omashu"
+    ],
+    "dialogue_line_count": 270
+  },
+  {
+    "id": "b2e4",
+    "title": "The Swamp",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 4,
+    "overall": 24,
+    "air_date": "April 14, 2006",
+    "production_code": "204",
+    "writer": "Tim Hedrick",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Due",
+        "Huu",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Tho"
+      ],
+      "minor": [
+        "Broadsword man",
+        "Iroh",
+        "Kya (nonbender)",
+        "Slim",
+        "Toph Beifong",
+        "Foggy Swamp Tribe",
+        "Yue",
+        "Zuko"
+      ],
+      "antagonists": []
+    },
+    "locations": [
+      "Foggy Swamp",
+      "River village"
+    ],
+    "dialogue_line_count": 193
+  },
+  {
+    "id": "b2e5",
+    "title": "Avatar Day",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 5,
+    "overall": 25,
+    "air_date": "April 28, 2006",
+    "production_code": "205",
+    "writer": "John O'Bryan",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Tong",
+        "Zuko"
+      ],
+      "minor": [
+        "Foaming mouth guy",
+        "Koko",
+        "Kyoshi",
+        "Oyaji",
+        "Scary prisoner",
+        "Sensitive ruffian"
+      ],
+      "antagonists": [
+        "Chin",
+        "Rough Rhinos",
+        "Kahchi",
+        "Mongke",
+        "Ogodei",
+        "Vachir",
+        "Yeh-Lu"
+      ]
+    },
+    "locations": [
+      "Chin Village",
+      "Chin Village prison",
+      "Kyoshi Island",
+      "Suki's village",
+      "River village"
+    ],
+    "dialogue_line_count": 247
+  },
+  {
+    "id": "b2e6",
+    "title": "The Blind Bandit",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 6,
+    "overall": 26,
+    "air_date": "May 5, 2006",
+    "production_code": "206",
+    "writer": "Michael Dante DiMartino",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Lao Beifong",
+        "Yu",
+        "Momo",
+        "Poppy Beifong",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Earthbending academy teenagers",
+        "Flyer distribution man"
+      ],
+      "antagonists": [
+        "Fire Nation Man",
+        "Headhunter",
+        "The Big Bad Hippo",
+        "The Boulder",
+        "The Gecko",
+        "The Gopher",
+        "Xin Fu"
+      ]
+    },
+    "locations": [
+      "Gaoling",
+      "Beifong Estate",
+      "Earth Rumble",
+      "Master Yu's Earthbending Academy"
+    ],
+    "dialogue_line_count": 242
+  },
+  {
+    "id": "b2e7",
+    "title": "Zuko Alone",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 7,
+    "overall": 27,
+    "air_date": "May 12, 2006",
+    "production_code": "207",
+    "writer": "Elizabeth Welch Ehasz",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Azula",
+        "Gansu",
+        "Lee",
+        "Ozai",
+        "Sela",
+        "Ursa",
+        "Zuko"
+      ],
+      "minor": [
+        "Azulon",
+        "Iroh",
+        "Mai",
+        "Than",
+        "Ty Lee",
+        "Ying"
+      ],
+      "antagonists": [
+        "Gow"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Fire Nation Royal Palace",
+      "Lee Family Pig Farm",
+      "Plains village"
+    ],
+    "dialogue_line_count": 219
+  },
+  {
+    "id": "b2e8",
+    "title": "The Chase",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 8,
+    "overall": 28,
+    "air_date": "May 26, 2006",
+    "production_code": "208",
+    "writer": "Joshua Hamilton",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [],
+      "antagonists": [
+        "Azula",
+        "Mai",
+        "Ty Lee",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Nan Shan River",
+      "Several campsites",
+      "Tu Zin"
+    ],
+    "dialogue_line_count": 245
+  },
+  {
+    "id": "b2e9",
+    "title": "Bitter Work",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 9,
+    "overall": 29,
+    "air_date": "June 2, 2006",
+    "production_code": "209",
+    "writer": "Aaron Ehasz",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Foo Foo Cuddlypoops",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Lu Ten"
+      ],
+      "antagonists": [
+        "Saber-tooth moose lion"
+      ]
+    },
+    "locations": [
+      "Earth Kingdom",
+      "Quarry campsite",
+      "Tu Zin"
+    ],
+    "dialogue_line_count": 177
+  },
+  {
+    "id": "b2e10",
+    "title": "The Library",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 10,
+    "overall": 30,
+    "air_date": "July 14, 2006",
+    "production_code": "210",
+    "writer": "John O'Bryan",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zei"
+      ],
+      "minor": [
+        "Knowledge Seekers",
+        "Zhao"
+      ],
+      "antagonists": [
+        "Ghashiun",
+        "Si Wong tribes",
+        "Wan Shi Tong"
+      ]
+    },
+    "locations": [
+      "Misty Palms Oasis",
+      "Si Wong Desert",
+      "Wan Shi Tong's Library",
+      "Planetary calendar room"
+    ],
+    "dialogue_line_count": 209
+  },
+  {
+    "id": "b2e11",
+    "title": "The Desert",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 11,
+    "overall": 31,
+    "air_date": "July 14, 2006",
+    "production_code": "211",
+    "writer": "Tim Hedrick",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Fung",
+        "Ghashiun",
+        "Sha-Mo",
+        "Si Wong tribes"
+      ],
+      "antagonists": [
+        "Rough Rhinos",
+        "Kahchi",
+        "Mongke",
+        "Ogodei",
+        "Vachir",
+        "Yeh-Lu",
+        "Xin Fu",
+        "Yu"
+      ]
+    },
+    "locations": [
+      "Si Wong Desert",
+      "Flower shop",
+      "Misty Palms Oasis"
+    ],
+    "dialogue_line_count": 286
+  },
+  {
+    "id": "b2e12",
+    "title": "The Serpent's Pass",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 12,
+    "overall": 32,
+    "air_date": "* September 9, 2006 <small>(premiere screenings)</small><ref name=\"ic\">{{Cite web |url=https://www.icv2.com/articles/home/9225.html |title=Upper Deck's <nowiki>'</nowiki>''Avatar''<nowiki>'</nowiki> Promotion |accessdate=2013-08-29 |date=August 27, 2006 |publisher=ICV2}}</ref>\n* September 15, 2006 <small>(television)</small>",
+    "production_code": "212",
+    "writer": "* Joshua Hamilton\n* Michael Dante DiMartino",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Jet",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Suki",
+        "Than",
+        "Toph Beifong",
+        "Ying",
+        "Zuko"
+      ],
+      "minor": [
+        "Cabbage merchant",
+        "Hope",
+        "Longshot",
+        "Passport attendant",
+        "Smellerbee",
+        "Than's sister"
+      ],
+      "antagonists": [
+        "Fire Nation"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "East and West Lakes",
+      "Full Moon Bay",
+      "Serpent's Pass",
+      "Waterfall pond"
+    ],
+    "dialogue_line_count": 227
+  },
+  {
+    "id": "b2e13",
+    "title": "The Drill",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 13,
+    "overall": 33,
+    "air_date": "* September 9, 2006 <small>(premiere screenings)</small><ref name=\"ic\">{{Cite web |url=https://www.icv2.com/articles/home/9225.html |title=Upper Deck's <nowiki>'</nowiki>''Avatar''<nowiki>'</nowiki> Promotion |accessdate=2013-08-29 |date=August 27, 2006 |publisher=ICV2}}</ref>\n* September 15, 2006",
+    "production_code": "213",
+    "writer": "* Michael Dante DiMartino\n* Bryan Konietzko",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Jet",
+        "Katara",
+        "Longshot",
+        "Momo",
+        "Smellerbee",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Fire Nation",
+        "Hope",
+        "Sung",
+        "Than",
+        "Than's sister",
+        "Terra Team",
+        "Ticket woman",
+        "Ying"
+      ],
+      "antagonists": [
+        "Azula",
+        "Mai",
+        "Qin",
+        "Ty Lee"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se"
+    ],
+    "dialogue_line_count": 212
+  },
+  {
+    "id": "b2e14",
+    "title": "City of Walls and Secrets",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 14,
+    "overall": 34,
+    "air_date": "September 22, 2006",
+    "production_code": "214",
+    "writer": "Tim Hedrick",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Jet",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Ba Sing Se University student",
+        "Bosco",
+        "Corncob guy",
+        "Kuei",
+        "Longshot",
+        "Pao",
+        "Pet shop owner",
+        "Pong",
+        "Royal messenger",
+        "Smellerbee",
+        "Tycho",
+        "Refugees of the Hundred Year War"
+      ],
+      "antagonists": [
+        "Dai Li",
+        "Joo Dee",
+        "Long Feng"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Ba Sing Se University",
+      "Earth Kingdom Royal Palace",
+      "Lower Ring",
+      "Pao Family Tea House",
+      "Team Avatar's Upper Ring house"
+    ],
+    "dialogue_line_count": 293
+  },
+  {
+    "id": "b2e15",
+    "title": "The Tales of Ba Sing Se",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 15,
+    "overall": 35,
+    "air_date": "September 29, 2006",
+    "production_code": "215",
+    "writer": "*Joann Estoesta\n* Lisa Wahlander\n* Andrew Huebner\n* Gary Scheppke\n* Lauren MacMullan\n* Katie Mattila\n* Justin Ridge\n* Giancarlo Volpe\n* Elizabeth Welch Ehasz (story editor)\n* John O'Bryan (story editor)",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Jin",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Animal control officer",
+        "Five-Seven-Five Society",
+        "Fluffykins",
+        "Huge round angry face",
+        "Kenji",
+        "Macmu-Ling",
+        "Organ grinder",
+        "Tycho",
+        "Waiter"
+      ],
+      "antagonists": [
+        "Star"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Ba Sing Se Zoo",
+      "Fancy Lady Day Spa",
+      "Firelight Fountain",
+      "Five-Seven-Five Society headquarters",
+      "Kuanming Square restaurant",
+      "Pao Family Tea House",
+      "Team Avatar's Upper Ring house"
+    ],
+    "dialogue_line_count": 178
+  },
+  {
+    "id": "b2e16",
+    "title": "Appa's Lost Days",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 16,
+    "overall": 36,
+    "air_date": "October 13, 2006",
+    "production_code": "216",
+    "writer": "Elizabeth Welch Ehasz",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Appa",
+        "Kyoshi Warriors",
+        "Aika",
+        "Fume",
+        "Mira",
+        "Rie",
+        "Suki",
+        "Pathik"
+      ],
+      "minor": [
+        "Aang",
+        "Appa's mother",
+        "Beetle-headed merchants",
+        "Compassionate Fire Nation boy",
+        "Hakoda",
+        "Iio",
+        "Iroh",
+        "Long Feng",
+        "Momo",
+        "flying bison",
+        "Shuzumu",
+        "Toph Beifong",
+        "Fire Nation man",
+        "Zuko"
+      ],
+      "antagonists": [
+        "Azula",
+        "Boar-q-pine",
+        "Circus trainer",
+        "Farmer and wife",
+        "Ghashiun",
+        "Mai",
+        "Si Wong tribes",
+        "Ty Lee"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Eastern Air Temple",
+      "Eastern Sea",
+      "Fire Nation circus",
+      "Earth Kingdom",
+      "Serpent's Pass",
+      "Si Wong Desert",
+      "Si Wong Desert#Si Wong Rock",
+      "Wan Shi Tong's Library"
+    ],
+    "dialogue_line_count": 106
+  },
+  {
+    "id": "b2e17",
+    "title": "Lake Laogai",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 17,
+    "overall": 37,
+    "air_date": "November 3, 2006",
+    "production_code": "217",
+    "writer": "Tim Hedrick",
+    "director": "Lauren MacMullan",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Freedom Fighters",
+        "Iroh",
+        "Jet",
+        "Katara",
+        "Longshot",
+        "Momo",
+        "Smellerbee",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Joo Dee",
+        "Old Sweepy",
+        "Pao",
+        "Quon"
+      ],
+      "antagonists": [
+        "Dai Li",
+        "Long Feng",
+        "Mongke"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Iroh and Zuko's apartment",
+      "Lake Laogai",
+      "Pao Family Tea House",
+      "Team Avatar's Upper Ring house",
+      "Treetop hideout"
+    ],
+    "dialogue_line_count": 242
+  },
+  {
+    "id": "b2e18",
+    "title": "The Earth King",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 18,
+    "overall": 38,
+    "air_date": "November 17, 2006",
+    "production_code": "218",
+    "writer": "John O'Bryan",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Katara",
+        "Kuei",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Appa",
+        "How",
+        "Momo",
+        "Royal Earthbender Guards"
+      ],
+      "antagonists": [
+        "Azula",
+        "Long Feng",
+        "Mai",
+        "Ty Lee",
+        "Xin Fu",
+        "Yu"
+      ]
+    },
+    "locations": [
+      "Earth Kingdom Royal Palace",
+      "Lake Laogai",
+      "Ba Sing Se#Outer Wall"
+    ],
+    "dialogue_line_count": 220
+  },
+  {
+    "id": "b2e19",
+    "title": "The Guru",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 19,
+    "overall": 39,
+    "air_date": "December 1, 2006",
+    "production_code": "219",
+    "writer": "* Michael Dante DiMartino\n* Bryan Konietzko",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Hakoda",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Pathik",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Bato",
+        "Bosco",
+        "Kuei",
+        "Royal messenger"
+      ],
+      "antagonists": [
+        "Azula",
+        "Long Feng",
+        "Mai",
+        "Yu",
+        "Ty Lee",
+        "Xin Fu"
+      ]
+    },
+    "locations": [
+      "Chameleon Bay",
+      "Earth Kingdom Royal Palace",
+      "Eastern Air Temple",
+      "Iroh and Zuko's apartment",
+      "Jasmine Dragon"
+    ],
+    "dialogue_line_count": 191
+  },
+  {
+    "id": "b2e20",
+    "title": "The Crossroads of Destiny",
+    "book": 2,
+    "book_name": "Earth",
+    "episode": 20,
+    "overall": 40,
+    "air_date": "December 1, 2006",
+    "production_code": "220",
+    "writer": "Aaron Ehasz",
+    "director": "Michael Dante DiMartino",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Bosco",
+        "Captured agent",
+        "Dai Li",
+        "Head of the Dai Li",
+        "Kuei"
+      ],
+      "antagonists": [
+        "Azula",
+        "Long Feng",
+        "Mai",
+        "Ty Lee",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Crystal Catacombs",
+      "Earth Kingdom Royal Palace",
+      "Team Avatar's Upper Ring house"
+    ],
+    "dialogue_line_count": 197
+  },
+  {
+    "id": "b3e1",
+    "title": "The Awakening",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 1,
+    "overall": 41,
+    "air_date": "September 21, 2007",
+    "production_code": "301",
+    "writer": "Aaron Ehasz",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Hakoda",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Bato",
+        "Bosco",
+        "Hope",
+        "Jin",
+        "Kuei",
+        "Lo and Li",
+        "Pipsqueak",
+        "Mai",
+        "Roku",
+        "Than",
+        "The Duke",
+        "Ying",
+        "Yue"
+      ],
+      "antagonists": [
+        "Azula",
+        "Military of the Fire Nation",
+        "Fire Navy officer",
+        "Ozai",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Earth Kingdom Royal Palace",
+      "Chameleon Bay",
+      "Crescent Island",
+      "Fire Nation Royal Palace",
+      "Fire Navy ship",
+      "Seedy merchants pier"
+    ],
+    "dialogue_line_count": 193
+  },
+  {
+    "id": "b3e2",
+    "title": "The Headband",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 2,
+    "overall": 42,
+    "air_date": "September 28, 2007",
+    "production_code": "302",
+    "writer": "John O'Bryan",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Aang",
+        "Katara",
+        "On Ji",
+        "Shoji",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Combustion Man",
+        "Fire Nation music teacher",
+        "Fire Nation school",
+        "Iroh",
+        "Mai",
+        "Kwan"
+      ],
+      "antagonists": [
+        "Azula",
+        "Headmaster",
+        "Hide",
+        "Zuko"
+      ]
+    },
+    "locations": [
+      "Beach cave",
+      "Capital City Prison",
+      "Fire Nation Royal Palace",
+      "Fire Nation school",
+      "Fire Nation Capital#Hari Bulkan"
+    ],
+    "dialogue_line_count": 211
+  },
+  {
+    "id": "b3e3",
+    "title": "The Painted Lady",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 3,
+    "overall": 43,
+    "air_date": "October 5, 2007",
+    "production_code": "303",
+    "writer": "Joshua Hamilton",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Katara",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Appa",
+        "Dock/Xu/Bushi",
+        "Jang Hui boy",
+        "Momo",
+        "Painted Lady"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation",
+        "Mung"
+      ]
+    },
+    "locations": [
+      "Fire Nation Army factory",
+      "Jang Hui",
+      "Jang Hui River"
+    ],
+    "dialogue_line_count": 195
+  },
+  {
+    "id": "b3e4",
+    "title": "Sokka's Master",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 4,
+    "overall": 44,
+    "air_date": "October 12, 2007",
+    "production_code": "304",
+    "writer": "Tim Hedrick",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Iroh",
+        "Katara",
+        "Momo",
+        "Piandao",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Fat",
+        "Poon",
+        "Weapons store shopkeeper"
+      ],
+      "antagonists": []
+    },
+    "locations": [
+      "Capital City Prison",
+      "Piandao's castle",
+      "Shu Jing"
+    ],
+    "dialogue_line_count": 216
+  },
+  {
+    "id": "b3e5",
+    "title": "The Beach",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 5,
+    "overall": 45,
+    "air_date": "October 19, 2007",
+    "production_code": "305",
+    "writer": "Katie Mattila",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Aang",
+        "Azula",
+        "Chan",
+        "Katara",
+        "Mai",
+        "Ruon-Jian",
+        "Sokka",
+        "Toph Beifong",
+        "Ty Lee",
+        "Zuko"
+      ],
+      "minor": [
+        "Appa",
+        "Ember Island",
+        "Fire Nation",
+        "Iroh",
+        "Lo and Li",
+        "Lu Ten",
+        "Momo",
+        "Ozai",
+        "Ursa"
+      ],
+      "antagonists": [
+        "Combustion Man"
+      ]
+    },
+    "locations": [
+      "Ember Island",
+      "Secluded hot springs"
+    ],
+    "dialogue_line_count": 227
+  },
+  {
+    "id": "b3e6",
+    "title": "The Avatar and the Fire Lord",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 6,
+    "overall": 46,
+    "air_date": "* October 24, 2007 <small>(UK)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=487 |title=UK Getting New Episodes Before USA |work=AvatarSpirit.net |author=Acastus |date=October 24, 2007 |accessdate=January 30, 2019 |archiveurl=https://web.archive.org/web/20200128173242/https://www.avatarspirit.net/news.php?id=487 |archivedate=January 28, 2020}}</ref><ref name=\"TV.com\">{{Cite web |url=https://www.tv.com/avatar-the-last-airbender/the-avatar-and-the-firelord/episode/1046068/trivia.html |archiveurl=https://web.archive.org/web/20081108114018/https://www.tv.com/avatar-the-last-airbender/the-avatar-and-the-firelord/episode/1046068/trivia.html |title=''Avatar: The Last Airbender'': The Avatar and the Fire Lord Episode Trivia |work=TV.com |accessdate=January 30, 2019 |archivedate=November 8, 2008}}</ref> \n* October 26, 2007 <small>(United States)</small>",
+    "production_code": "306",
+    "writer": "Elizabeth Welch Ehasz",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Fang",
+        "Roku",
+        "Zuko"
+      ],
+      "minor": [
+        "Appa",
+        "Azula",
+        "Fire Sages",
+        "Gyatso",
+        "Iroh",
+        "Katara",
+        "Sokka",
+        "Sud",
+        "Ta Min",
+        "Ta Min's friend",
+        "Taqukaq",
+        "Toph Beifong"
+      ],
+      "antagonists": [
+        "Sozin",
+        "Sozin's dragon"
+      ]
+    },
+    "locations": [
+      "Earth Kingdom",
+      "Fire Nation Capital",
+      "Capital City Prison",
+      "Fire Nation Royal Palace",
+      "High Temple",
+      "Northern Water Tribe",
+      "Agna Qel'a",
+      "Roku's island",
+      "Southern Air Temple",
+      "Spirit World"
+    ],
+    "dialogue_line_count": 178
+  },
+  {
+    "id": "b3e7",
+    "title": "The Runaway",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 7,
+    "overall": 47,
+    "air_date": "* October 25, 2007 <small>(UK)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=487 |title=UK Getting New Episodes Before USA |work=AvatarSpirit.net |author=Acastus |date=October 24, 2007 |accessdate=January 30, 2019 |archiveurl=https://web.archive.org/web/20200128173242/https://www.avatarspirit.net/news.php?id=487 |archivedate=January 28, 2020}}</ref><ref name=\"TV.com\">{{Cite web |url=https://www.tv.com/shows/avatar-the-last-airbender/the-runaway-1035540/trivia/ |archiveurl=https://web.archive.org/web/20110920235928/https://www.tv.com/avatar-the-last-airbender/the-runaway/episode/1035540/trivia.html |title=''Avatar: The Last Airbender'': The Runaway Episode Trivia |work=TV.com |accessdate=January 30, 2019 |archivedate=September 20, 2011}}</ref> \n* November 2, 2007 <small>(United States)</small>",
+    "production_code": "307",
+    "writer": "Joshua Hamilton",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Dealer",
+        "Town authority"
+      ],
+      "antagonists": [
+        "Combustion Man"
+      ]
+    },
+    "locations": [
+      "Fire Fountain City"
+    ],
+    "dialogue_line_count": 220
+  },
+  {
+    "id": "b3e8",
+    "title": "The Puppetmaster",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 8,
+    "overall": 48,
+    "air_date": "* October 25, 2007 <small>(UK)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=487 |title=UK Getting New Episodes Before USA |work=AvatarSpirit.net |author=Acastus |date=October 24, 2007 |accessdate=January 30, 2019 |archiveurl=https://web.archive.org/web/20200128173242/https://www.avatarspirit.net/news.php?id=487 |archivedate=January 28, 2020}}</ref><ref name=\"TV.com\">{{Cite web |url=https://www.tv.com/shows/avatar-the-last-airbender/the-puppetmaster-1118271/trivia/ |archiveurl=https://web.archive.org/web/20081107220951/https://www.tv.com/avatar-the-last-airbender/the-puppetmaster/episode/1118271/trivia.html |title=''Avatar: The Last Airbender'': The Puppetmaster Episode Trivia |work=TV.com |accessdate=January 30, 2019 |archivedate=November 7, 2008}}</ref> \n* November 9, 2007 <small>(United States)</small>",
+    "production_code": "308",
+    "writer": "Tim Hedrick",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong"
+      ],
+      "minor": [
+        "Ding",
+        "Kanna",
+        "Local villagers",
+        "Prisoners",
+        "Yao (vendor)"
+      ],
+      "antagonists": [
+        "Fire Nation",
+        "Hama"
+      ]
+    },
+    "locations": [
+      "Fire Island Prison",
+      "Hama's village",
+      "Hama's inn",
+      "Mountain prison",
+      "Southern Water Tribe",
+      "Wolf Cove"
+    ],
+    "dialogue_line_count": 237
+  },
+  {
+    "id": "b3e9",
+    "title": "Nightmares and Daydreams",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 9,
+    "overall": 49,
+    "air_date": "* October 26, 2007 <small>(UK)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=487 |title=UK Getting New Episodes Before USA |work=AvatarSpirit.net |author=Acastus |date=October 24, 2007 |accessdate=January 30, 2019 |archiveurl=https://web.archive.org/web/20200128173242/https://www.avatarspirit.net/news.php?id=487 |archivedate=January 28, 2020}}</ref><ref name=\"TV.com\">{{Cite web |url=https://www.tv.com/shows/avatar-the-last-airbender/nightmares-and-daydreams-1121064/trivia/ |archiveurl=https://web.archive.org/web/20081107220925/https://www.tv.com/avatar-the-last-airbender/nightmares-and-daydreams/episode/1121064/trivia.html |title=''Avatar: The Last Airbender'': Nightmares and Daydreams Episode Trivia |work=TV.com |accessdate=January 30, 2019 |archivedate=November 7, 2008}}</ref> \n* November 16, 2007 <small>(United States)</small>",
+    "production_code": "309",
+    "writer": "John O'Bryan",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Mai",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Azula",
+        "Pathik",
+        "Mai's house servants"
+      ],
+      "antagonists": [
+        "Ozai"
+      ]
+    },
+    "locations": [
+      "Black Cliffs",
+      "Fire Nation Capital",
+      "Fire Nation Royal Palace",
+      "Royal spa",
+      "Mai's house"
+    ],
+    "dialogue_line_count": 233
+  },
+  {
+    "id": "b3e10",
+    "title": "The Day of Black Sun, Part 1: The Invasion",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 10,
+    "overall": 50,
+    "air_date": "* November 23, 2007 <small>(Netherlands and Belgium)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=501 |title=\"Day of Black Sun\" Airs First in The Netherlands & Belgium |work=AvatarSpirit.net |author=Acastus |date=November 24, 2007 |accessdate=January 30, 2019 |archiveurl=https://web.archive.org/web/20200629003237/https://www.avatarspirit.net/news.php?id=501 |archivedate=June 29, 2020}}</ref> \n* November 30, 2007 <small>(United States)</small>",
+    "production_code": "310",
+    "writer": "Michael Dante DiMartino",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Hakoda",
+        "Katara",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Bato",
+        "The Big Bad Hippo",
+        "The Boulder",
+        "Due",
+        "The Duke",
+        "Haru",
+        "Huu",
+        "Iroh",
+        "Mechanist",
+        "Ming",
+        "Momo",
+        "Pipsqueak",
+        "Teo",
+        "Tho",
+        "Tyro"
+      ],
+      "antagonists": [
+        "Military of the Fire Nation",
+        "Poon"
+      ]
+    },
+    "locations": [
+      "Black Cliffs",
+      "Fire Nation Capital",
+      "Capital City Prison",
+      "Fire Nation Royal Palace",
+      "Mai's house",
+      "Royal Plaza"
+    ],
+    "dialogue_line_count": 165
+  },
+  {
+    "id": "b3e11",
+    "title": "The Day of Black Sun, Part 2: The Eclipse",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 11,
+    "overall": 51,
+    "air_date": "* November 26, 2007 <small>(Netherlands and Belgium)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=501 |title=\"Day of Black Sun\" Airs First in The Netherlands & Belgium |work=AvatarSpirit.net |author=Acastus |date=November 24, 2007 |accessdate=January 30, 2019|archiveurl=https://web.archive.org/web/20200128173149/https://www.avatarspirit.net/news.php?id=501 |archivedate=January 28, 2020}}</ref><ref name=\"ASN2\">{{Cite web |url=https://web.archive.org/web/20071229075841/https://forums.avatarspirit.net/index.php?topic=9597.0 |title=DoBS Part 2 AIRED!!! |work=forums.AvatarSpirit.net |accessdate=2019-01-30 }}</ref> \n* November 30, 2007 <small>(United States)</small>",
+    "production_code": "311",
+    "writer": "Aaron Ehasz",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Hakoda",
+        "Katara",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Bato",
+        "The Big Bad Hippo",
+        "The Boulder",
+        "The Duke",
+        "Haru",
+        "Mechanist",
+        "Pipsqueak",
+        "Poon",
+        "Qin",
+        "Teo",
+        "Tyro"
+      ],
+      "antagonists": [
+        "Azula",
+        "Dai Li",
+        "Military of the Fire Nation",
+        "Ozai"
+      ]
+    },
+    "locations": [
+      "Fire Nation Capital",
+      "Capital City Prison",
+      "Fire Nation Royal Palace",
+      "Royal Plaza"
+    ],
+    "dialogue_line_count": 211
+  },
+  {
+    "id": "b3e12",
+    "title": "The Western Air Temple",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 12,
+    "overall": 52,
+    "air_date": "* December 14, 2007 <small>(Canada)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=507 |title=Episode 312, \"The Western Air Temple\" Aired Last Night on YTV |work=AvatarSpirit.net |author=Acastus |date=December 15, 2007 |accessdate=January 30, 2019|archiveurl=https://web.archive.org/web/20200128173220/https://www.avatarspirit.net/news.php?id=507 |archivedate=January 28, 2020}}</ref><ref name=\"TV.com\">{{Cite web |url=https://www.tv.com/shows/avatar-the-last-airbender/the-western-air-temple-1110125/trivia/ |archiveurl=https://web.archive.org/web/20081006184403/https://www.tv.com/avatar-the-last-airbender/the-western-air-temple/episode/1110125/trivia.html |title=''Avatar: The Last Airbender'': The Western Air Temple Episode Trivia |work=TV.com |accessdate=January 30, 2019 |archivedate=October 6, 2008}}</ref> \n* July 14, 2008 <small>(United States)</small>",
+    "production_code": "312",
+    "writer": "* Elizabeth Welch Ehasz\n* Tim Hedrick",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "The Duke",
+        "Haru",
+        "Iroh",
+        "Teo"
+      ],
+      "antagonists": [
+        "Combustion Man"
+      ]
+    },
+    "locations": [
+      "Western Air Temple",
+      "Zuko's campsite"
+    ],
+    "dialogue_line_count": 195
+  },
+  {
+    "id": "b3e13",
+    "title": "The Firebending Masters",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 13,
+    "overall": 53,
+    "air_date": "* January 4, 2008 <small>(Canada)</small><ref name=\"ASN\">{{Cite web |url=https://www.avatarspirit.net/news.php?id=510 |title=Episode 313, \"The Firebending Masters\" Aired Last Night on YTV |work=AvatarSpirit.net |author=Acastus |date=January 5, 2008 |accessdate=January 30, 2019 |archiveurl=https://web.archive.org/web/20200128173255/https://www.avatarspirit.net/news.php?id=510 |archivedate=January 28, 2020}}</ref><ref name=\"TV.com\">{{Cite web |url=https://www.tv.com/shows/avatar-the-last-airbender/the-firebending-masters-1158780/trivia/ |archiveurl=https://web.archive.org/web/20081106132622/https://www.tv.com/avatar-the-last-airbender/the-firebending-masters/episode/1158780/trivia.html |title=''Avatar: The Last Airbender'': The Firebending Masters Episode Trivia |work=TV.com |accessdate=January 30, 2019 |archivedate=November 6, 2008}}</ref>\n* July 15, 2008 <small>(United States)</small>",
+    "production_code": "313",
+    "writer": "John O'Bryan",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Zuko"
+      ],
+      "minor": [
+        "Appa",
+        "The Duke",
+        "Haru",
+        "Katara",
+        "Sokka",
+        "Teo",
+        "Toph Beifong",
+        "Ran and Shaw",
+        "Sun Warriors",
+        "Sun Warrior chief"
+      ],
+      "antagonists": [
+        "Ham Ghao"
+      ]
+    },
+    "locations": [
+      "Sun Warriors' ancient city",
+      "Western Air Temple"
+    ],
+    "dialogue_line_count": 239
+  },
+  {
+    "id": "b3e14",
+    "title": "The Boiling Rock, Part 1",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 14,
+    "overall": 54,
+    "air_date": "May 6, 2008 <small>(DVD)</small><br />July 16, 2008 <small>(television)</small>",
+    "production_code": "314",
+    "writer": "May Chan",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Chit Sang",
+        "Sokka",
+        "Suki",
+        "Zuko"
+      ],
+      "minor": [
+        "Aang",
+        "Appa",
+        "Chit Sang's friend",
+        "Chit Sang's girlfriend",
+        "The Duke",
+        "Hakoda",
+        "Haru",
+        "Katara",
+        "Momo",
+        "Teo",
+        "Toph Beifong"
+      ],
+      "antagonists": [
+        "Bully guard",
+        "Gondola guards",
+        "Warden (Boiling Rock)",
+        "Warden's bodyguards"
+      ]
+    },
+    "locations": [
+      "Boiling Rock",
+      "Western Air Temple"
+    ],
+    "dialogue_line_count": 257
+  },
+  {
+    "id": "b3e15",
+    "title": "The Boiling Rock, Part 2",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 15,
+    "overall": 55,
+    "air_date": "May 6, 2008 <small>(DVD)</small><br />July 16, 2008 <small>(television)</small>",
+    "production_code": "315",
+    "writer": "Joshua Hamilton",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Chit Sang",
+        "Hakoda",
+        "Mai",
+        "Sokka",
+        "Suki",
+        "Zuko"
+      ],
+      "minor": [
+        "Aang",
+        "Bully guard",
+        "Katara",
+        "Lowly guard",
+        "Toph Beifong",
+        "Tough criminal"
+      ],
+      "antagonists": [
+        "Azula",
+        "Gondola guards",
+        "Ty Lee",
+        "Warden (Boiling Rock)",
+        "Warden's bodyguards"
+      ]
+    },
+    "locations": [
+      "Boiling Rock",
+      "Western Air Temple"
+    ],
+    "dialogue_line_count": 253
+  },
+  {
+    "id": "b3e16",
+    "title": "The Southern Raiders",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 16,
+    "overall": 56,
+    "air_date": "July 17, 2008",
+    "production_code": "316",
+    "writer": "Elizabeth Welch Ehasz",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Katara",
+        "Kya (nonbender)",
+        "Zuko"
+      ],
+      "minor": [
+        "Aang",
+        "Appa",
+        "Chit Sang",
+        "Hakoda",
+        "Haru",
+        "Momo",
+        "Sokka",
+        "Suki",
+        "Teo",
+        "The Duke",
+        "Toph Beifong",
+        "Yon Rha's mother"
+      ],
+      "antagonists": [
+        "Azula",
+        "Southern Raiders",
+        "Southern Raiders commander",
+        "Yon Rha"
+      ]
+    },
+    "locations": [
+      "Fire Navy communication towers",
+      "Ozai's beach house",
+      "Western Air Temple",
+      "Whaletail Island",
+      "Wolf Cove",
+      "Yon Rha's village"
+    ],
+    "dialogue_line_count": 217
+  },
+  {
+    "id": "b3e17",
+    "title": "The Ember Island Players",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 17,
+    "overall": 57,
+    "air_date": "July 18, 2008",
+    "production_code": "317",
+    "writer": "* Tim Hedrick\n* Joshua Hamilton\n* John O'Bryan",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Ember Island Players",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Suki",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [],
+      "antagonists": []
+    },
+    "locations": [
+      "Ember Island Theater",
+      "Ozai's beach house"
+    ],
+    "dialogue_line_count": 266
+  },
+  {
+    "id": "b3e18",
+    "title": "Sozin's Comet, Part 1: The Phoenix King",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 18,
+    "overall": 58,
+    "air_date": "July 19, 2008",
+    "production_code": "318",
+    "writer": "Michael Dante DiMartino",
+    "director": "Ethan Spaulding",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Suki",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Ember Island Players",
+        "June",
+        "Shinu",
+        "Bujing"
+      ],
+      "antagonists": [
+        "Azula",
+        "Ozai"
+      ]
+    },
+    "locations": [
+      "Lion turtle#Era of the Avatar",
+      "Ember Island",
+      "Ozai's beach house",
+      "Fire Nation Royal Palace",
+      "Fire Nation Capital#Harbor City",
+      "Royal Plaza",
+      "Tavern"
+    ],
+    "dialogue_line_count": 218
+  },
+  {
+    "id": "b3e19",
+    "title": "Sozin's Comet, Part 2: The Old Masters",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 19,
+    "overall": 59,
+    "air_date": "July 19, 2008",
+    "production_code": "319",
+    "writer": "Aaron Ehasz",
+    "director": "Giancarlo Volpe",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Iroh",
+        "Momo",
+        "Katara",
+        "Sokka",
+        "Suki",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Bumi (King of Omashu)",
+        "Jeong Jeong",
+        "June",
+        "Kuruk",
+        "Kyoshi",
+        "Lion turtle",
+        "Nyla",
+        "Ozai",
+        "Pakku",
+        "Piandao",
+        "Roku",
+        "Yangchen"
+      ],
+      "antagonists": []
+    },
+    "locations": [
+      "Lion turtle shell",
+      "Ozai's airship base",
+      "Tavern",
+      "White Lotus camp"
+    ],
+    "dialogue_line_count": 182
+  },
+  {
+    "id": "b3e20",
+    "title": "Sozin's Comet, Part 3: Into the Inferno",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 20,
+    "overall": 60,
+    "air_date": "July 19, 2008",
+    "production_code": "320",
+    "writer": "* Michael Dante DiMartino\n* Bryan Konietzko",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Aang",
+        "Appa",
+        "Katara",
+        "Momo",
+        "Sokka",
+        "Suki",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Banished servant",
+        "Bumi (King of Omashu)",
+        "Fire Nation engineers",
+        "Head of the Dai Li",
+        "High Sage",
+        "Iroh",
+        "Jeong Jeong",
+        "Lo and Li",
+        "Pakku",
+        "Qin Lee",
+        "Ursa"
+      ],
+      "antagonists": [
+        "Azula",
+        "Fire Nation airship captain",
+        "Ozai"
+      ]
+    },
+    "locations": [
+      "Fire Nation Capital",
+      "Fire Nation Royal Palace",
+      "Ozai's airship base",
+      "Wulong Forest"
+    ],
+    "dialogue_line_count": 151
+  },
+  {
+    "id": "b3e21",
+    "title": "Sozin's Comet, Part 4: Avatar Aang",
+    "book": 3,
+    "book_name": "Fire",
+    "episode": 21,
+    "overall": 61,
+    "air_date": "July 19, 2008",
+    "production_code": "321",
+    "writer": "* Michael Dante DiMartino\n* Bryan Konietzko",
+    "director": "Joaquim Dos Santos",
+    "cast": {
+      "main": [
+        "Aang",
+        "Iroh",
+        "Katara",
+        "Sokka",
+        "Suki",
+        "Toph Beifong",
+        "Zuko"
+      ],
+      "minor": [
+        "Bato",
+        "Fire Sages",
+        "Foggy Swamp Tribe",
+        "Hakoda",
+        "Haru",
+        "Kyoshi Warriors",
+        "Lion turtle",
+        "Mai",
+        "Mechanist",
+        "Pipsqueak",
+        "Teo",
+        "The Big Bad Hippo",
+        "The Boulder",
+        "The Duke",
+        "Ty Lee",
+        "Tyro"
+      ],
+      "antagonists": [
+        "Azula",
+        "Military of the Fire Nation",
+        "Ozai"
+      ]
+    },
+    "locations": [
+      "Ba Sing Se",
+      "Jasmine Dragon",
+      "Fire Nation Capital",
+      "Capital City Prison",
+      "Fire Nation Royal Palace",
+      "Wulong Forest"
+    ],
+    "dialogue_line_count": 91
+  }
+]
