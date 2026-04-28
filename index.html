@@ -10,100 +10,114 @@
 <body>
     <div id="show-intro">
         <div id="show-title">
-            <img src="images/show_logo.png" alt="Avatar: The Last Airbender Logo" id="logo" style="width: 350px; height: auto;">
+            <img src="images/show_logo.png" alt="Avatar: The Last Airbender Logo" id="logo">
             <h2>SCRIPT ANALYSIS</h2>
         </div>
-        <p>
-            Avatar: The Last Airbender is an western animated show that takes place in a world where people can manipulate the four elements: water, earth, fire, and air. 
-            It aired on Nickelodeon from February 21, 2005 - July 19, 2008 and contains three seasons with a total
-            of 61 episodes.
-            
-            The main protagonist, Aang, is the last surviving airbender or air manipulator and has undertaken
-            the role of the Avatar, the only person who can master all four elements and maintain balance in the world.
-            The world is divided into four nations based on the elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. 
-            Aang and his friends venture on a journey for Aang to master all four elements in order to defeat
-            the Fire Nation, which has launched a war to conquer the world. 
-        </p>
-    </div>
-    <!-- Season Filter -->
-    <div id="season-filter">
-        <p><strong>SEASON FILTER</strong></p>
-        <div class="season-select">
-            <button id="all-season" type="button" onclick="selectAllSeasonData()">Show All</button>
-            <label class="season-toggle">
-                <input type="checkbox" name="season-select" value="1" checked>
-                <span>Book 1: Water</span>
-            </label>
-            <label class="season-toggle">
-                <input type="checkbox" name="season-select" value="2" checked>
-                <span>Book 2: Earth</span>
-            </label>
-            <label class="season-toggle">
-                <input type="checkbox" name="season-select" value="3" checked>
-                <span>Book 3: Fire</span>
-            </label>
+        <div id="col-direction">
+            <h3 style="margin-left: 18px;">Show Summary</h3>
+            <p>
+                Avatar: The Last Airbender is an western animated show that takes place in a world where people can manipulate the four elements: water, earth, fire, and air. 
+                It aired on Nickelodeon from February 21, 2005 - July 19, 2008 and contains three seasons with a total
+                of 61 episodes.
+                
+                The main protagonist, Aang, is the last surviving airbender or air manipulator and has undertaken
+                the role of the Avatar, the only person who can master all four elements and maintain balance in the world.
+                The world is divided into four nations based on the elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. 
+                Aang and his friends venture on a journey for Aang to master all four elements in order to defeat
+                the Fire Nation, which has launched a war to conquer the world. 
+            </p>
         </div>
     </div>
 
-    <section id="phrase-explorer">
-        <p><strong>PHRASE LIFECYCLE EXPLORER</strong></p>
-        <div id="phrase-examples"></div>
-        <div class="phrase-search-bar">
-            <input type="text" id="phrase-input" placeholder="Search a word or phrase…" />
-            <button id="phrase-search-btn">Search</button>
+    <div id="filter-ctrls">
+        <h3>FILTER</h3>
+        <!-- Search -->
+        <section id="phrase-explorer">
+            <div id="phrase-examples"></div>
+            <div class="phrase-search-bar">
+                <input type="text" id="phrase-input" placeholder="Search a word or phrase…" />
+                <button id="phrase-search-btn">Search</button>
+            </div>
+            <label class="phrase-toggle-row">
+                <input type="checkbox" id="phrase-stem-toggle" />
+                <span class="phrase-toggle-label">Match related word forms</span>
+                <span class="phrase-toggle-hint">(e.g. "fight" → fighting, fighter)</span>
+            </label>
+            <div id="phrase-summary" class="phrase-summary"></div>
+            <div class="phrase-charts">
+                <div id="phrase-timeline"></div>
+                <div id="phrase-characters"></div>
+            </div>
+        </section>
+
+        <!-- Season Filter -->
+        <div id="season-filter">
+            <div class="season-select">
+                <button id="all-season" type="button" onclick="selectAllSeasonData()">Show All Seasons</button>
+                <label class="season-toggle">
+                    <input type="checkbox" name="season-select" value="1" checked>
+                    <span>Book 1: Water</span>
+                </label>
+                <label class="season-toggle">
+                    <input type="checkbox" name="season-select" value="2" checked>
+                    <span>Book 2: Earth</span>
+                </label>
+                <label class="season-toggle">
+                    <input type="checkbox" name="season-select" value="3" checked>
+                    <span>Book 3: Fire</span>
+                </label>
+            </div>
         </div>
-        <label class="phrase-toggle-row">
-            <input type="checkbox" id="phrase-stem-toggle" />
-            <span class="phrase-toggle-label">Match related word forms</span>
-            <span class="phrase-toggle-hint">(e.g. "fight" → fighting, fighter)</span>
-        </label>
-        <div id="phrase-summary" class="phrase-summary"></div>
-        <div class="phrase-charts">
-            <div id="phrase-timeline"></div>
-            <div id="phrase-characters"></div>
+    </div>
+    <div id="row-direction">
+        <div id="char-list-container">
+            <h3>Character Ranking By Line Count</h3>
+            <div id="char-list"></div>
         </div>
-    </section>
+        <!-- What do characters say? -->
+        <section id="character-words">
+            <header class="section-header">
+                <h2>What do characters say?</h2>
+                <p class="section-subtitle">Pick a character to see the words and phrases they use most. Use the season filter above to scope the analysis.</p>
+            </header>
 
-    <!-- Level 2 Option 1: What do characters say? -->
-    <section id="character-words">
-        <header class="section-header">
-            <h2>What do characters say?</h2>
-            <p class="section-subtitle">Pick a character to see the words and phrases they use most. Use the season filter above to scope the analysis.</p>
-        </header>
+            <div id="character-picker" class="character-picker"></div>
 
-        <div id="character-picker" class="character-picker"></div>
+            <div class="character-words-grid">
+                <article class="panel panel-cloud">
+                    <header class="panel-header">
+                        <h3>Word Cloud</h3>
+                        <p class="panel-sub" id="cloud-caption">Top words after removing common stop-words.</p>
+                    </header>
+                    <div id="word-cloud" class="word-cloud"></div>
+                </article>
 
-        <div class="character-words-grid">
-            <article class="panel panel-cloud">
-                <header class="panel-header">
-                    <h3>Word Cloud</h3>
-                    <p class="panel-sub" id="cloud-caption">Top words after removing common stop-words.</p>
-                </header>
-                <div id="word-cloud" class="word-cloud"></div>
-            </article>
+                <article class="panel panel-bars">
+                    <header class="panel-header">
+                        <h3>Top Words</h3>
+                        <p class="panel-sub">Frequency of each word in this character's lines.</p>
+                    </header>
+                    <div id="top-words" class="top-words"></div>
+                </article>
 
-            <article class="panel panel-bars">
-                <header class="panel-header">
-                    <h3>Top Words</h3>
-                    <p class="panel-sub">Frequency of each word in this character's lines.</p>
-                </header>
-                <div id="top-words" class="top-words"></div>
-            </article>
-
-            <article class="panel panel-phrases">
-                <header class="panel-header">
-                    <h3>Common Phrases</h3>
-                    <p class="panel-sub">Multi-word phrases (2-4 words) this character repeats most.</p>
-                </header>
-                <div id="top-phrases" class="top-phrases"></div>
-            </article>
-        </div>
-    </section>
-
+                <article class="panel panel-phrases">
+                    <header class="panel-header">
+                        <h3>Common Phrases</h3>
+                        <p class="panel-sub">Multi-word phrases (2-4 words) this character repeats most.</p>
+                    </header>
+                    <div id="top-phrases" class="top-phrases"></div>
+                </article>
+            </div>
+        </section>
+    </div>
     <script src="js/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jasondavies/d3-cloud@1.2.7/build/d3.layout.cloud.js"></script>
     <script src="js/text-analysis.js"></script>
     <script src="js/character-words.js"></script>
+    <script src="js/phrase-explorer.js"></script>
+    <script src="js/chord-diagram.js"></script>
+    <script src="js/charList.js"></script>
+    <script src="js/charInfo.js"></script>
     <script src="js/main.js"></script>
 
     <div id="tooltip"></div>

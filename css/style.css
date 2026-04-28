@@ -1,24 +1,63 @@
-
-body { /* WILL UNCOMMENT LATER */ 
-    /* Photo by <a href="https://unsplash.com/@roborobs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robynne O</a> on <a href="https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a 
+:root {
+    --bg: #0f1722;
+    --panel: #182233;
+    --panel-2: #202c40;
+    --ink: #f5efe1;
+    --ink-dim: #b8c0cc;
+    --fire: #7e1111;
+    --fire-bright: #c26f02;
+    --water: #3b82f6;
+    --earth: #08661d;
+    --air: #ffebcd;
+    --border: #553b2c;
+    /* Photo by <a href="https://unsplash.com/@roborobs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robynne O</a> on <a href="https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a > */
     background-image: url('../images/robynne-o-iVYTAfsN9hk-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#col-direction {
+    display: flex;
+    flex-direction: column;
+}
+
+#row-direction {
+    display: flex;
+    flex-direction: row;
 }
 
 #show-intro {
-    
+    background-color: #ffe5bd;
+    padding: 25px;
     color: #333;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
+#show-intro p {
+    margin: 0px 20px 10px 20px; /* top right bottom left */
+    font-size: 16px;
+    line-height: 1.5;
+}
 #show-title {
-    display: flex;
+    display: grid;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    justify-items: center;
+    width: 270px;
+}
+
+#logo {
+    display: block;
+    width: 270px;
+    height: auto;
+    margin: 0 auto;
 }
 
 #show-title h2 {
@@ -26,11 +65,21 @@ body { /* WILL UNCOMMENT LATER */
     border-radius: 5px;
     padding: 10px 20px;
     color: #ffffff;
+    margin: 10px 10px 0 0;
+    width: fit-content;
+    justify-self: center;
+}
+
+#filter-ctrls {
+    background-color: #fccfaa;
+    padding: 2px 0px 0px 20px;
+    margin: 20px;
+    border-radius: 8px;
 }
 
 /* --- SEASON FILTER --- */
 #season-filter {
-    margin: 20px;
+    margin: -30px 20px 15px -10px;
     text-align: start;
     border-radius: 5px;
 }
@@ -48,7 +97,6 @@ body { /* WILL UNCOMMENT LATER */
 
 .season-toggle {
     background-color: #f0a500;
-    border: none;
     color: white;
     padding: 10px 20px;
     margin: 5px;
@@ -60,14 +108,13 @@ body { /* WILL UNCOMMENT LATER */
 /* ── Phrase Lifecycle Explorer ──────────────────────────────── */
 
 #phrase-explorer {
-    margin: 20px;
+    margin: 0px;
 }
 
 #phrase-examples {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 10px;
 }
 
 .phrase-chip {
@@ -97,7 +144,7 @@ body { /* WILL UNCOMMENT LATER */
     display: flex;
     align-items: center;
     gap: 7px;
-    margin-bottom: 14px;
+
     cursor: pointer;
     user-select: none;
 }
@@ -211,6 +258,14 @@ body { /* WILL UNCOMMENT LATER */
 }
 
 /* --- CHAR PROFILE LIST --- */
+#char-list-container {
+  background-color: rgba(243, 143, 28, 0.603);
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 1px 10px 0px 10px;
+  width: 300px;
+}
+
 .char-individual-display {
   display: flex;
   flex-direction: row;
