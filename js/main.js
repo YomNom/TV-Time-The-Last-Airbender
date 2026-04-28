@@ -28,8 +28,8 @@ Promise.all([
     if (window.CharacterWords) CharacterWords.init(scriptData);
 
     updateAll();
-    // initChordDiagram(data);
-    //phraseExplorer.init(data);
+    initChordDiagram(scriptData);
+    phraseExplorer.init(scriptData);
 
     seasonFilterArray.forEach(cb => {
         cb.addEventListener('change', handleSeasonSelectionChange);

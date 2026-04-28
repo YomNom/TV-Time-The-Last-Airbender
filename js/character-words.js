@@ -5,9 +5,9 @@
     "use strict";
 
     const ROSTER_MIN_LINES = 30;
-    const TOP_WORDS_FOR_CLOUD = 80;
-    const TOP_WORDS_FOR_BARS = 15;
-    const TOP_PHRASES = 12;
+    const TOP_WORDS_FOR_CLOUD = 20; 
+    const TOP_WORDS_FOR_BARS = 5;
+    const TOP_PHRASES = 5;
 
     // ATLA element-ish palette. Chosen to read clearly against the dark panel.
     const PALETTE = ["#f0a500", "#b1591a", "#3b82f6", "#10b981", "#a855f7", "#ef4444"];
@@ -47,11 +47,11 @@
         if (!selectedCharacter) return;
         const charRows = TextAnalysis.rowsForCharacter(currentFiltered, selectedCharacter);
 
-        const caption = document.getElementById("cloud-caption");
+        const caption = document.getElementById("char-header");
         if (caption) {
-            caption.textContent = charRows.length
-                ? `${selectedCharacter} — ${charRows.length} lines in the current selection.`
-                : `${selectedCharacter} doesn't appear in the selected seasons.`;
+            caption.innerHTML = charRows.length
+                ? `<h3 class="cw-status-title"><strong>${escapeHtml(selectedCharacter)}</strong><br><span class="cw-status-line">${charRows.length} lines in the current selection.</span></h3>`
+                : `<h3 class="cw-status-title"><strong>${escapeHtml(selectedCharacter)}</strong><br><span class="cw-status-line">doesn't appear in the selected seasons.</span></h3>`;
         }
 
         renderWordCloud(charRows);

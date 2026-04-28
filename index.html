@@ -11,7 +11,7 @@
     <div id="show-intro">
         <div id="show-title">
             <img src="images/show_logo.png" alt="Avatar: The Last Airbender Logo" id="logo">
-            <h2>SCRIPT ANALYSIS</h2>
+            <h3>SCRIPT ANALYSIS</h3>
         </div>
         <div id="col-direction">
             <h3 style="margin-left: 18px;">Show Summary</h3>
@@ -30,26 +30,7 @@
     </div>
 
     <div id="filter-ctrls">
-        <h3>FILTER</h3>
-        <!-- Search -->
-        <section id="phrase-explorer">
-            <div id="phrase-examples"></div>
-            <div class="phrase-search-bar">
-                <input type="text" id="phrase-input" placeholder="Search a word or phrase…" />
-                <button id="phrase-search-btn">Search</button>
-            </div>
-            <label class="phrase-toggle-row">
-                <input type="checkbox" id="phrase-stem-toggle" />
-                <span class="phrase-toggle-label">Match related word forms</span>
-                <span class="phrase-toggle-hint">(e.g. "fight" → fighting, fighter)</span>
-            </label>
-            <div id="phrase-summary" class="phrase-summary"></div>
-            <div class="phrase-charts">
-                <div id="phrase-timeline"></div>
-                <div id="phrase-characters"></div>
-            </div>
-        </section>
-
+        <h4 style="color: #4e3211;">Season Filter</h4>
         <!-- Season Filter -->
         <div id="season-filter">
             <div class="season-select">
@@ -76,44 +57,75 @@
         </div>
         <!-- What do characters say? -->
         <section id="character-words">
-            <header class="section-header">
-                <h2>What do characters say?</h2>
-                <p class="section-subtitle">Pick a character to see the words and phrases they use most. Use the season filter above to scope the analysis.</p>
-            </header>
+            <header class="section-header" id="char-header"></header>
 
             <div class="character-words-grid">
                 <article class="panel panel-cloud">
                     <header class="panel-header">
-                        <h3>Word Cloud</h3>
-                        <p class="panel-sub" id="cloud-caption">Top words after removing common stop-words.</p>
+                        <h3>Most Used Words</h3>
+                        <p class="panel-sub" id="cloud-caption">Without Common Stop-Words</p>
                     </header>
                     <div id="word-cloud" class="word-cloud"></div>
                 </article>
+                <div id="char-profile-words">
+                    <article class="panel panel-bars">
+                        <header class="panel-header">
+                            <h3>Frequency of Each Most Used Word</h3>
+                        </header>
+                        <div id="top-words" class="top-words"></div>
+                    </article>
 
-                <article class="panel panel-bars">
-                    <header class="panel-header">
-                        <h3>Top Words</h3>
-                        <p class="panel-sub">Frequency of each word in this character's lines.</p>
-                    </header>
-                    <div id="top-words" class="top-words"></div>
-                </article>
-
-                <article class="panel panel-phrases">
-                    <header class="panel-header">
-                        <h3>Common Phrases</h3>
-                        <p class="panel-sub">Multi-word phrases (2-4 words) this character repeats most.</p>
-                    </header>
-                    <div id="top-phrases" class="top-phrases"></div>
-                </article>
+                    <article class="panel panel-phrases">
+                        <header class="panel-header">
+                            <h3>Common Phrases</h3>
+                        </header>
+                        <div id="top-phrases" class="top-phrases"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="phrase-explorer">
+            <p><strong>PHRASE LIFECYCLE EXPLORER</strong></p>
+            <div id="phrase-examples"></div>
+            <div class="phrase-search-bar">
+                <input type="text" id="phrase-input" placeholder="Search a word or phrase…" />
+                <button id="phrase-search-btn">Search</button>
+            </div>
+            <label class="phrase-toggle-row">
+                <input type="checkbox" id="phrase-stem-toggle" />
+                <span class="phrase-toggle-label">Match related word forms</span>
+                <span class="phrase-toggle-hint">(e.g. "fight" → fighting, fighter)</span>
+            </label>
+            <div id="phrase-summary" class="phrase-summary"></div>
+            <div class="phrase-charts">
+                <div id="phrase-timeline"></div>
+                <div id="phrase-characters"></div>
             </div>
         </section>
     </div>
+
+    <!-- Character Interaction Chord Diagram -->
+    <section id="chord-section">
+        <p><strong>CHARACTER INTERACTIONS</strong></p>
+        <p class="chord-description">
+            Chord diagram showing how often the top characters speak with each other.
+            Arc Size = Total Exchanges
+            Ribbon Thickness = Exchanges between that pair.
+            Use the season filter above or the episode selector to explore how interactions change over the series.
+        </p>
+        <div id="chord-controls">
+            <label for="chord-episode-select">Episode: </label>
+            <select id="chord-episode-select"></select>
+        </div>
+        <div id="chord-diagram"></div>
+    </section>
+
     <script src="js/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jasondavies/d3-cloud@1.2.7/build/d3.layout.cloud.js"></script>
     <script src="js/text-analysis.js"></script>
     <script src="js/character-words.js"></script>
-    <script src="js/phrase-explorer.js"></script>
-    <script src="js/chord-diagram.js"></script>
+    <script src="js/phrase-lifecycle-explorer.js"></script>
+    <script src="js/chordDiagram.js"></script>
     <script src="js/charList.js"></script>
     <script src="js/charInfo.js"></script>
     <script src="js/main.js"></script>
