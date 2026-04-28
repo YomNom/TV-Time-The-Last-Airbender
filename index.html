@@ -34,25 +34,27 @@
         <div id="season-stats-content"></div>
     </section>
 
-    <!-- Character Interaction Chord Diagram -->
-    <section id="chord-section">
-        <p><strong>CHARACTER INTERACTIONS</strong></p>
-        <p class="chord-description">
-            Chord diagram showing how often the top characters speak with each other.
-            Arc Size = Total Exchanges
-            Ribbon Thickness = Exchanges between that pair.
-            Use the season filter above or the episode selector to explore how interactions change over the series.
-        </p>
-        <div id="chord-controls">
-            <label for="chord-episode-select">Episode: </label>
-            <select id="chord-episode-select"></select>
+    <section id="phrase-explorer">
+        <p><strong>PHRASE LIFECYCLE EXPLORER</strong></p>
+        <div id="phrase-examples"></div>
+        <div class="phrase-search-bar">
+            <input type="text" id="phrase-input" placeholder="Search a word or phrase…" />
+            <button id="phrase-search-btn">Search</button>
         </div>
-        <div id="chord-diagram"></div>
+        <label class="phrase-toggle-row">
+            <input type="checkbox" id="phrase-stem-toggle" />
+            <span class="phrase-toggle-label">Match related word forms</span>
+            <span class="phrase-toggle-hint">(e.g. "fight" → fighting, fighter)</span>
+        </label>
+        <div id="phrase-summary" class="phrase-summary"></div>
+        <div class="phrase-charts">
+            <div id="phrase-timeline"></div>
+            <div id="phrase-characters"></div>
+        </div>
     </section>
 
     <script src="js/d3.v6.min.js"></script>
-
-    <script src="js/chordDiagram.js"></script>
+    <script src="js/phrase-lifecycle-explorer.js"></script>
     <script src="js/main.js"></script>
 
     <div id="tooltip"></div>

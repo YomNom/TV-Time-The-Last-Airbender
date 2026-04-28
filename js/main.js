@@ -18,6 +18,7 @@ Promise.all([
 
     updateSeasonStats();
     initChordDiagram(data);
+    phraseExplorer.init(data);
 
     seasonFilterArray.forEach(cb => {
         cb.addEventListener('change', updateSeasonStats);
