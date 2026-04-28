@@ -36,155 +36,55 @@ body { /* WILL UNCOMMENT LATER */
     font-size: 16px;
 }
 
-/* ── Phrase Lifecycle Explorer ──────────────────────────────── */
+/* ── Chord Diagram ───────────────────────────────────── */
 
-#phrase-explorer {
+#chord-section {
     margin: 20px;
 }
 
-#phrase-examples {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 10px;
-}
-
-.phrase-chip {
-    background: transparent;
-    border: 1.5px solid #f0a500;
-    color: #b1591a;
-    padding: 3px 11px;
-    border-radius: 14px;
+.chord-description {
+    color: #aaa;
     font-size: 13px;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
+    max-width: 700px;
+    margin-bottom: 12px;
 }
 
-.phrase-chip:hover {
-    background: #f0a500;
-    color: #fff;
+#chord-controls {
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
-.phrase-search-bar {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 10px;
-    max-width: 680px;
+#chord-controls label {
+    color: #ddd;
+    margin-right: 6px;
 }
 
-.phrase-toggle-row {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    margin-bottom: 14px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.phrase-toggle-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: #444;
-}
-
-.phrase-toggle-hint {
-    font-size: 12px;
-    color: #999;
-}
-
-.phrase-search-bar input {
-    flex: 1;
-    padding: 8px 12px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
-.phrase-search-bar input:focus {
-    border-color: #f0a500;
-    box-shadow: 0 0 0 2px rgba(240, 165, 0, 0.2);
-}
-
-#phrase-search-btn {
-    background-color: #b1591a;
-    border: none;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    white-space: nowrap;
-}
-
-#phrase-search-btn:hover {
-    background-color: #964a14;
-}
-
-.phrase-summary {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
-    min-height: 28px;
-}
-
-.phrase-pill {
-    background-color: #f0a500;
-    color: white;
-    padding: 4px 12px;
+#chord-controls select {
+    background-color: #2a2a2a;
+    color: #eee;
+    border: 1px solid #555;
+    padding: 5px 10px;
     border-radius: 4px;
-    font-size: 13px;
-    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-.phrase-pill--none {
-    background-color: #aaa;
+#chord-diagram {
+    display: inline-block;
 }
 
-.phrase-pill--mode {
-    background-color: #888;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.phrase-charts {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-#phrase-timeline svg,
-#phrase-characters svg {
-    overflow: visible;
-    display: block;
-}
+/* ── Tooltip ─────────────────────────────────────────── */
 
 #tooltip {
     position: absolute;
-    background: rgba(0, 0, 0, 0.78);
-    color: #fff;
-    padding: 6px 11px;
-    border-radius: 4px;
+    display: none;
+    background: rgba(20, 20, 20, 0.9);
+    color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 5px;
     font-size: 13px;
     pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.12s;
-    z-index: 10;
-}
-
-.axis text {
-    font-size: 11px;
-    fill: #555;
-}
-
-.axis path,
-.axis line {
-    stroke: #ccc;
-}
-
-.axis-label {
-    font-size: 11px;
-    fill: #777;
+    z-index: 100;
+    border: 1px solid #555;
+    line-height: 1.5;
 }
