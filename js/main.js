@@ -17,6 +17,7 @@ Promise.all([
     seasonFilterArray.forEach(cb => cb.checked = true);
 
     updateSeasonStats();
+    phraseExplorer.init(data);
 
     seasonFilterArray.forEach(cb => {
         cb.addEventListener('change', updateSeasonStats);
