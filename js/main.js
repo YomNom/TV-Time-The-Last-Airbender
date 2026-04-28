@@ -1,140 +1,165 @@
-let appData = [];
+let scriptData, charAndTheirLines, charObjList;
+let charlist, charInfo;
+
+function pickField(row, keys, fallback = "") {
+    for (const key of keys) {
+        if (row[key] !== undefined && row[key] !== null) {
+            return row[key];
+        }
+    }
+    return fallback;
+}
 
 Promise.all([
-    d3.csv("data/ATLA-episodes-scripts.csv", d => ({
-        CHARACTER: (d.Character || d.CHARACTER || "").trim(),
-        SCRIPT: (d.script || d.SCRIPT || "").trim(),
-        EP_NUMBER: +(d.ep_number || d.EP_NUMBER),
-        BOOK: +(d.Book || d.BOOK),
-        TOTAL_NUMBER: +(d.total_number || d.TOTAL_NUMBER)
-    })),
+    d3.csv("data/ATLA-episodes-scripts.csv"),
 ]).then(([data]) => {
-    appData = data;
+    scriptData = data;
 
     // --- Season Filter --- //
     // All data options are selected by default.
     const seasonFilterArray = Array.from(document.querySelectorAll('input[name="season-select"]'));
     seasonFilterArray.forEach(cb => cb.checked = true);
 
-    updateSeasonStats();
+    // --- Char List Retrieval --- //
+    charAndTheirLines = getCharactersAndTheirLines(scriptData); // for line analysis/processing
+    charObjList = createCharObjList(charAndTheirLines); // for display
+    console.log("CHAR OBJ LIST:", charObjList);
+
+    updateDataBySeason();
     initChordDiagram(data);
     phraseExplorer.init(data);
 
     seasonFilterArray.forEach(cb => {
-        cb.addEventListener('change', updateSeasonStats);
+        cb.addEventListener('change', handleSeasonSelectionChange);
     });
 
 }).catch(error => {
     console.error("Error loading data:", error);
 });
 
-function selectAllSeasons() {
-    const seasonFilterArray = Array.from(document.querySelectorAll('input[name="season-select"]'));
-    seasonFilterArray.forEach(cb => cb.checked = true);
-    updateSeasonStats();
+function renderDisplay(data) {
+    // --- Char List Retrieval --- //
+    charAndTheirLines = getCharactersAndTheirLines(data); // build from filtered data
+    charObjList = createCharObjList(charAndTheirLines); // for display
+    console.log("CHAR OBJ LIST:", charObjList);
+
+    if (!charlist) {
+        charlist = new charList({
+            parentElement: "#char-list"
+        }, charObjList);
+        return;
+    }
+
+    // Reuse existing list container to avoid stacking duplicate panels and scroll jumps.
+    charlist.data = charObjList;
+    charlist.updateVis();
 }
 
+// Displays Data For All Seasons
+function selectAllSeasonData() {
+    const seasonFilterArray = Array.from(document.querySelectorAll('input[name="season-select"]'));
+    seasonFilterArray.forEach(cb => cb.checked = true);
+    updateDataBySeason();
+}
+
+// Retrieves what seasons are selected by the user 
+// OUTPUT: Returns them as an array of numbers
 function getSelectedSeasons() {
     return Array.from(document.querySelectorAll('input[name="season-select"]:checked'))
         .map(cb => +cb.value);
 }
 
-function updateSeasonStats() {
+function handleSeasonSelectionChange(event) {
     const selectedSeasons = getSelectedSeasons();
-    const filteredData = getDataForSeason(appData, selectedSeasons);
-    renderSeasonStats(filteredData);
-    if (typeof updateChordDiagram === 'function') updateChordDiagram(filteredData);
-}
 
-/*
-    FOR TESTING
-    - displays season stats for each season
-*/
-function buildSeasonStats(data) {
-    const seasons = Array.from(new Set(data.map(d => d.BOOK))).sort((a, b) => a - b);
-
-    return seasons.map(season => {
-        const seasonData = data.filter(d => d.BOOK === season);
-        const episodeCount = new Set(seasonData.map(d => d.EP_NUMBER)).size;
-        const lineCount = seasonData.length;
-        const lineCounts = new Map();
-
-        seasonData.forEach(d => {
-            const line = d.SCRIPT;
-            lineCounts.set(line, (lineCounts.get(line) || 0) + 1);
-        });
-
-        const topLines = Array.from(lineCounts.entries())
-            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-            .slice(0, 10)
-            .map(([line, count]) => ({ line, count }));
-
-        return {
-            season,
-            episodeCount,
-            lineCount,
-            topLines
-        };
-    });
-}
-
-function escapeHtml(value) {
-    return String(value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#39;");
-}
-
-function renderSeasonStats(data) {
-    const container = document.getElementById("season-stats-content");
-    if (!container) {
+    // Prevent unchecking the final remaining selected season.
+    if (!event.target.checked && selectedSeasons.length === 0) {
+        event.target.checked = true;
         return;
     }
 
-    if (!data.length) {
-        container.innerHTML = "<p>No seasons selected.</p>";
-        return;
-    }
-
-    const stats = buildSeasonStats(data);
-    container.innerHTML = stats.map(season => `
-        <article class="season-stat-card">
-            <h3>Season ${season.season}</h3>
-            <p>Episodes: ${season.episodeCount}</p>
-            <p>Lines: ${season.lineCount}</p>
-            <h4>Top 10 Lines</h4>
-            <ol>
-                ${season.topLines.map(item => `<li><span>${escapeHtml(item.line)}</span> <strong>(${item.count})</strong></li>`).join("")}
-            </ol>
-        </article>
-    `).join("");
+    updateDataBySeason();
 }
-//////////////////////////////
 
+// Updates the data based on the seasons selected by the user
+function updateDataBySeason() {
+    console.log("scriptData:", scriptData);
+    const filteredData = allSelectedData(scriptData);
+    console.log("filteredData:", filteredData);
+    renderDisplay(filteredData);
+}
+
+// Filters and gets the data based on the seasons selected by the user
 function getDataForSeason(data, season) {
     const dataType = new Set(season.map(Number));
-    const newData = data.filter(d => dataType.has(d.BOOK)); // Retrives data for selected seasons
+    const newData = data.filter(d => {
+        const book = +pickField(d, ["BOOK", "Book", "book"]);
+        return dataType.has(book);
+    }); // Retrives data for selected seasons
     
     // Cleans and converts data to valid types
     newData.forEach(d => {
-        d.CHARACTER = d.CHARACTER.trim(); 
-        d.SCRIPT = d.SCRIPT.trim();
-        d.EP_NUMBER = +d.EP_NUMBER; 
-        d.BOOK = +d.BOOK; 
-        d.TOTAL_NUMBER = +d.TOTAL_NUMBER;
+        d.CHARACTER = String(pickField(d, ["CHARACTER", "Character", "character"], "")).trim();
+        d.SCRIPT = String(pickField(d, ["SCRIPT", "script"], "")).trim();
+        d.EP_NUMBER = +pickField(d, ["EP_NUMBER", "ep_number", "Ep_Number"], 0);
+        d.BOOK = +pickField(d, ["BOOK", "Book", "book"], 0);
+        d.TOTAL_NUMBER = +pickField(d, ["TOTAL_NUMBER", "total_number", "Total_Number"], 0);
     });
 
     return newData;
 }
 
-function selectSeasonLines(data) {
-    const seasonFilterArray = Array.from(document.querySelectorAll('input[name="season-select"]:checked'))
-        .map(cb => +cb.value); // Get values of checked checkboxes
+// Compiles all selected data into one array 
+function allSelectedData(data) {
+    const selectedSeasons = getSelectedSeasons();
+    const selectedData = [];
 
-    // Makes sure a season is selected
-    if (!seasonFilterArray.length) { return [];}
+    selectedSeasons.forEach(season => {
+        const seasonData = getDataForSeason(data, [season]);
+        selectedData.push(...seasonData);
+    });
 
-    return Array.from(new Set(data.filter(d => seasonFilterArray.includes(d.BOOK)).map(d => d.SCRIPT)));
+    return selectedData;
 }
+
+// Gets all unique characters and their lines and stores them in
+// OUTPUT: dictionary-like structure where the key is the character and the value is an array of their lines
+function getCharactersAndTheirLines(data) {
+    const characters = new Map();
+
+    data.forEach(d => {
+        const character = String(pickField(d, ["CHARACTER", "Character", "character"], "")).trim();
+        if (!character) {
+            return;
+        }
+        if (!characters.has(character)) { // Adds characters not in map
+            characters.set(character, []);
+        }
+        characters.get(character).push(d); // Keep full row so episode metadata is available
+    });
+
+    return characters;
+}
+
+// Creates objects for each key-value pair in the characters map and stores them in an array
+// OUTPUT: Array of objects containing: char name, number of lines, array of episodes they appear in
+function createCharObjList(characters) {
+    const charObjList = [];
+
+    characters.forEach((lines, character) => {
+        const charObj = {
+            name: character,
+            lineCount: lines.length,
+            episodes: new Set(), // Using a set to avoid duplicate episodes
+        };
+        lines.forEach(row => {
+            const episode = row.EP_NUMBER;
+            charObj.episodes.add(episode); // Adds the episode to the set of episodes
+        });
+        charObj.episodes = Array.from(charObj.episodes);
+        charObjList.push(charObj);
+    });
+
+    return charObjList;
+}
+

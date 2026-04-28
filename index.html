@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div id="show-intro">
+        <div id="show-title">
+            <img src="images/show_logo.png" alt="Avatar: The Last Airbender Logo" id="logo" style="width: 350px; height: auto;">
+            <h2>SCRIPT ANALYSIS</h2>
+        </div>
+        <p>
+            Avatar: The Last Airbender is an western animated show that takes place in a world where people can manipulate the four elements: water, earth, fire, and air. 
+            It aired on Nickelodeon from February 21, 2005 - July 19, 2008 and contains three seasons with a total
+            of 61 episodes.
+            
+            The main protagonist, Aang, is the last surviving airbender or air manipulator and has undertaken
+            the role of the Avatar, the only person who can master all four elements and maintain balance in the world.
+            The world is divided into four nations based on the elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. 
+            Aang and his friends venture on a journey for Aang to master all four elements in order to defeat
+            the Fire Nation, which has launched a war to conquer the world. 
+        </p>
+    </div>
     <!-- Season Filter -->
     <div id="season-filter">
         <p><strong>SEASON FILTER</strong></p>
         <div class="season-select">
-            <button id="all-season" type="button" onclick="selectAllSeasons()">Show All</button>
+            <button id="all-season" type="button" onclick="selectAllSeasonData()">Show All</button>
             <label class="season-toggle">
                 <input type="checkbox" name="season-select" value="1" checked>
                 <span>Book 1: Water</span>
@@ -89,6 +105,8 @@
     <script src="js/text-analysis.js"></script>
     <script src="js/character-words.js"></script>
     <script src="js/main.js"></script>
+
+    <div id="tooltip"></div>
 
 </body>
 </html>
