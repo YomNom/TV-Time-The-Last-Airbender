@@ -6,8 +6,15 @@
 
     const ROSTER_MIN_LINES = 30;
     const TOP_WORDS_FOR_CLOUD = 40;
-    const TOP_WORDS_FOR_BARS = 10;
+    const TOP_WORDS_FOR_BARS = 12;
     const TOP_PHRASES = 8;
+
+    let wordView = "cloud"; // "cloud" | "bars"
+
+    const CAPTIONS = {
+        cloud: "Word size = frequency. Hover a word for the exact count.",
+        bars:  "Bar length = frequency. Top words after removing common stop-words."
+    };
 
     // ATLA element-ish palette. Chosen to read clearly against the dark panel.
     const PALETTE = ["#f0a500", "#b1591a", "#3b82f6", "#10b981", "#a855f7", "#ef4444"];
@@ -19,10 +26,40 @@
     let roster = [];
 
     function init(rows) {
+        // Wire UI controls first — they live in static HTML and don't depend on the data load.
+        wireSwitcher();
+
         allRows = rows;
+        // getCharactersAndTheirLines returns a Map, so probe with .size, not .length.
         roster = getCharactersAndTheirLines(rows);
-        if (!roster.length) return;
-        selectedCharacter = roster[0].name;
+        if (!roster || !roster.size) return;
+        selectedCharacter = Array.from(roster.keys())[0] || null;
+    }
+
+    function wireSwitcher() {
+        const buttons = document.querySelectorAll(".word-view-btn");
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => setWordView(btn.dataset.view));
+        });
+    }
+
+    function setWordView(view) {
+        if (view !== "cloud" && view !== "bars") return;
+        if (view === wordView) return;
+        wordView = view;
+
+        document.querySelectorAll(".word-view-btn").forEach(btn => {
+            const active = btn.dataset.view === view;
+            btn.classList.toggle("is-active", active);
+            btn.setAttribute("aria-selected", String(active));
+        });
+
+        const cloud = document.getElementById("word-cloud");
+        const bars = document.getElementById("top-words");
+        if (cloud) cloud.hidden = view !== "cloud";
+        if (bars)  bars.hidden  = view !== "bars";
+
+        refresh();
     }
 
     // Called by main.js whenever the season filter changes.
@@ -54,8 +91,14 @@
                 : `<h3 class="cw-status-title"><strong>${escapeHtml(selectedCharacter)}</strong><br><span class="cw-status-line">doesn't appear in the selected seasons.</span></h3>`;
         }
 
-        renderWordCloud(charRows);
-        renderTopWordsBars(charRows);
+        const cloudCaption = document.getElementById("cloud-caption");
+        if (cloudCaption) cloudCaption.textContent = CAPTIONS[wordView];
+
+        if (wordView === "cloud") {
+            renderWordCloud(charRows);
+        } else {
+            renderTopWordsBars(charRows);
+        }
         renderTopPhrases(charRows);
     }
 

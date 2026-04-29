@@ -85,16 +85,16 @@ function handleSeasonSelectionChange(event) {
 
 // Updates the data based on the seasons selected by the user
 function updateAll() {
-    console.log("scriptData:", scriptData);
     const filteredData = allSelectedData(scriptData);
-    console.log("filteredData:", filteredData);
     renderDisplay(filteredData);
-    
-    // After rendering the filtered char list, select the top character by line count
+
+    // Preserve the user's chosen character across season filter changes; only fall back
+    // to the top-ranked character if the prior selection no longer exists in the filter.
     if (Array.isArray(charObjList) && charObjList.length) {
-        const topChar = charObjList[0].name;
-        if (window.CharacterWords && typeof window.CharacterWords.setSelectedCharacter === 'function') {
-            window.CharacterWords.setSelectedCharacter(topChar);
+        const current = window.CharacterWords?.getSelectedCharacter?.();
+        const stillPresent = current && charObjList.some(c => c.name === current);
+        if (!stillPresent) {
+            window.CharacterWords?.setSelectedCharacter?.(charObjList[0].name);
         }
         if (typeof charlist?.updateVis === 'function') {
             charlist.updateVis();

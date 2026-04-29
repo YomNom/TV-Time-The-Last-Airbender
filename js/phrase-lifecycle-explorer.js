@@ -6,7 +6,8 @@ const phraseExplorer = (() => {
     const TIMELINE_H = 280 - TIMELINE_MARGIN.top - TIMELINE_MARGIN.bottom;
 
     const BAR_MARGIN = { top: 10, right: 50, bottom: 30, left: 110 };
-    const BAR_W = 360 - BAR_MARGIN.left - BAR_MARGIN.right;
+    /* Match the timeline's outer width (660) so the two charts stack at uniform width. */
+    const BAR_W = 660 - BAR_MARGIN.left - BAR_MARGIN.right;
     const BAR_ROW_H = 28;
 
     const COLOR_GOLD = "#f0a500";
