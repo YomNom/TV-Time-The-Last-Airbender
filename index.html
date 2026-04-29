@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="show-intro">
-        <div id="show-title">
-            <img src="images/show_logo.png" alt="Avatar: The Last Airbender Logo" id="logo">
-            <h3>SCRIPT ANALYSIS</h3>
-        </div>
-        <div id="col-direction">
-            <h3 style="margin-left: 18px;">Show Summary</h3>
+    <details id="show-intro">
+        <summary class="show-intro-bar">
+            <div id="show-title">
+                <img src="images/show_logo.png" alt="Avatar: The Last Airbender Logo" id="logo">
+                <h3>SCRIPT ANALYSIS</h3>
+            </div>
+            <span class="show-intro-toggle" role="button">
+                <span class="toggle-label">Show Summary</span>
+                <span class="toggle-arrow" aria-hidden="true">▾</span>
+            </span>
+        </summary>
+        <div class="show-summary-body">
             <p>
-                Avatar: The Last Airbender is an western animated show that takes place in a world where people can manipulate the four elements: water, earth, fire, and air. 
-                It aired on Nickelodeon from February 21, 2005 - July 19, 2008 and contains three seasons with a total
-                of 61 episodes.
-                
-                The main protagonist, Aang, is the last surviving airbender or air manipulator and has undertaken
-                the role of the Avatar, the only person who can master all four elements and maintain balance in the world.
-                The world is divided into four nations based on the elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. 
-                Aang and his friends venture on a journey for Aang to master all four elements in order to defeat
-                the Fire Nation, which has launched a war to conquer the world. 
+                Avatar: The Last Airbender is a western animated show that takes place in a world where people can manipulate the four elements: water, earth, fire, and air.
+                It aired on Nickelodeon from February 21, 2005 to July 19, 2008 and contains three seasons with a total of 61 episodes.
+            </p>
+            <p>
+                The main protagonist, Aang, is the last surviving airbender or air manipulator and has undertaken the role of the Avatar, the only person who can master all four elements and maintain balance in the world. The world is divided into four nations based on the elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. Aang and his friends venture on a journey for Aang to master all four elements in order to defeat the Fire Nation, which has launched a war to conquer the world.
             </p>
         </div>
-    </div>
+    </details>
 
     <div id="filter-ctrls">
         <h4 style="color: #4e3211;">Season Filter</h4>
@@ -63,28 +64,31 @@
             <div class="character-words-grid">
                 <article class="panel panel-cloud">
                     <header class="panel-header">
-                        <h3>Most Used Words</h3>
-                        <p class="panel-sub" id="cloud-caption">Without Common Stop-Words</p>
+                        <div class="panel-header-row">
+                            <h3>Most Used Words</h3>
+                            <div class="word-view-switch" role="tablist" aria-label="Most-used-words view">
+                                <button type="button" class="word-view-btn is-active" data-view="cloud" role="tab" aria-selected="true">Cloud</button>
+                                <button type="button" class="word-view-btn" data-view="bars" role="tab" aria-selected="false">Bars</button>
+                            </div>
+                        </div>
+                        <p class="panel-sub" id="cloud-caption">Word size = frequency. Hover a word for the exact count.</p>
                     </header>
-                    <div id="word-cloud" class="word-cloud"></div>
+                    <div id="word-cloud" class="word-cloud" role="tabpanel"></div>
+                    <div id="top-words" class="top-words" role="tabpanel" hidden></div>
                 </article>
-                <div id="char-profile-words">
-                    <article class="panel panel-bars">
-                        <header class="panel-header">
-                            <h3>Frequency of Each Most Used Word</h3>
-                        </header>
-                        <div id="top-words" class="top-words"></div>
-                    </article>
 
-                    <article class="panel panel-phrases">
-                        <header class="panel-header">
-                            <h3>Common Phrases</h3>
-                        </header>
-                        <div id="top-phrases" class="top-phrases"></div>
-                    </article>
-                </div>
+                <article class="panel panel-phrases">
+                    <header class="panel-header">
+                        <h3>Common Phrases</h3>
+                        <p class="panel-sub">Multi-word phrases this character repeats most.</p>
+                    </header>
+                    <div id="top-phrases" class="top-phrases"></div>
+                </article>
             </div>
         </section>
+    </div>
+
+    <div id="bottom-row">
         <section id="phrase-explorer">
             <p><strong>PHRASE LIFECYCLE EXPLORER</strong></p>
             <div id="phrase-examples"></div>
@@ -103,23 +107,23 @@
                 <div id="phrase-characters"></div>
             </div>
         </section>
-    </div>
 
-    <!-- Character Interaction Chord Diagram -->
-    <section id="chord-section">
-        <p><strong>CHARACTER INTERACTIONS</strong></p>
-        <p class="chord-description">
-            Chord diagram showing how often the top characters speak with each other.
-            Arc Size = Total Exchanges
-            Ribbon Thickness = Exchanges between that pair.
-            Use the season filter above or the episode selector to explore how interactions change over the series.
-        </p>
-        <div id="chord-controls">
-            <label for="chord-episode-select">Episode: </label>
-            <select id="chord-episode-select"></select>
-        </div>
-        <div id="chord-diagram"></div>
-    </section>
+        <!-- Character Interaction Chord Diagram -->
+        <section id="chord-section">
+            <p><strong>CHARACTER INTERACTIONS</strong></p>
+            <p class="chord-description">
+                Chord diagram showing how often the top characters speak with each other.
+                Arc Size = Total Exchanges
+                Ribbon Thickness = Exchanges between that pair.
+                Use the season filter above or the episode selector to explore how interactions change over the series.
+            </p>
+            <div id="chord-controls">
+                <label for="chord-episode-select">Episode: </label>
+                <select id="chord-episode-select"></select>
+            </div>
+            <div id="chord-diagram"></div>
+        </section>
+    </div>
 
     <script src="js/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jasondavies/d3-cloud@1.2.7/build/d3.layout.cloud.js"></script>
