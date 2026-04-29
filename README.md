@@ -79,7 +79,44 @@ The avatar logo was obtained from Wikipedia.
 
 ## Libraries
 
+- **[D3.js v6](https://d3js.org/)** — core data visualization library used for all charts (line graph, bar chart, chord diagram). Vendored locally at `js/d3.v6.min.js` so the app works without an internet connection.
+- **[d3-cloud v1.2.7](https://github.com/jasondavies/d3-cloud)** — D3 layout plugin by Jason Davies that computes word cloud positioning. Loaded from jsDelivr CDN and used exclusively by `character-words.js` to render the Most Used Words cloud.
+
 ## Code Structure
+
+```
+TV-Time-The-Last-Airbender/
+├── index.html                        # Single-page app entry point
+├── css/
+│   └── style.css                     # All layout and visual styling
+├── js/
+│   ├── d3.v6.min.js                  # D3.js v6
+│   ├── main.js                       # App entry point — loads CSV, wires season filter, calls updateAll()
+│   ├── charList.js                   # Character selection list
+│   ├── charInfo.js                   # Character profile bar chart
+│   ├── character-words.js            # Word cloud and top-words bar
+│   ├── chordDiagram.js               # Character relationship chord diagram
+│   ├── phrase-lifecycle-explorer.js  # Phrase Lifecycle Explorer
+│   └── text-analysis.js              # Shared stop-word list and text utilities
+├── data/
+│   ├── ATLA-episodes-scripts.csv     # Primary dataset — one row per character line
+│   ├── episodes.json                 # Episode metadata
+│   └── scripts.csv                   # Raw scraped transcripts
+├── images/                           # Static image assets
+└── scripts/
+    └── scrape.py                     # One-off Python scraper — not needed to run the app
+```
+
+### Data Flow
+
+`main.js` is the single entry point. On page load it fetches `ATLA-episodes-scripts.csv` with D3, then builds two shared data structures used by every other module:
+
+- `charAndTheirLines` — `{ CHARACTER: [lines…] }` map, used for text analysis.
+- `charObjList` — array of character objects with episode presence and line counts, used for display.
+
+On every season-filter change, `updateAll()` re-derives filtered slices and pushes them to each visualization module.
+
+## Features
 
 ### Season Filter
 
