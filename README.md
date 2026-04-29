@@ -2,15 +2,16 @@
 
 This project provides visualization of a text analysis done on transcripts for Avatar: The Last Airbender. These visualizations are visualized on a web page we made public on vercel. The show is a beloved childhood show of the creators of this project and is still popular today with a sequel show and movie (don't mention the live actions). These transcripts were sourced from Kaggle. However, we have scripts that were made if you were to want to replicate this project and do the scraping yourself.
 
-We go through the scripts to see:  
-- How many characters appear in each episode 
+We go through the scripts to see:
+
+- How many characters appear in each episode
 - Who appears in each episode
-- For each character: 
+- For each character:
   - How often do they appear in each episode/season
   - What do they tend to talk about
   - How often do they share a scene with other characters
- 
-This analysis is performed out of interest in the show and to understand more about the structure of the show, specifically to identify any overarching pattern in the show. Below is a runthrough of the website built in this project. 
+
+This analysis is performed out of interest in the show and to understand more about the structure of the show, specifically to identify any overarching pattern in the show. Below is a runthrough of the website built in this project.
 
 https://github.com/user-attachments/assets/a85b907f-ed70-4a59-a325-fe7114096613
 
@@ -20,7 +21,7 @@ https://github.com/user-attachments/assets/a85b907f-ed70-4a59-a325-fe7114096613
 > 2.  Launch a local web server in the root directory (e.g., `python -m http.server 8000`).
 > 3.  Navigate to `http://localhost:8000` via web browser.
 
-## [Data]([https://avatar.fandom.com/wiki/Category:Avatar:_The_Last_Airbender_episode_transcripts](https://www.kaggle.com/datasets/brunovr/avatar-the-last-airbender-complete-transcript/data))
+## [Data](<[https://avatar.fandom.com/wiki/Category:Avatar:_The_Last_Airbender_episode_transcripts](https://www.kaggle.com/datasets/brunovr/avatar-the-last-airbender-complete-transcript/data)>)
 
 The dataset was sourced from Kaggle and was made by BrunoVR. The link is available in the title of this section. They scraped the data from fandom, removing punctuation and making all characters lower-case. If we were to work further, we would have scraped character images and their descriptions from fandom personnally. We do have a script for doing so by Quoc, although we have not used it so far.
 
@@ -45,6 +46,7 @@ Initially, we had wanted to have an episode filter. However, it didn't really fi
 We didn't really have a stable idea for the layout but it worked out that the filter didn't do episodes because two of our visuals aren't affected by the season filter and have their own search methods.
 
 ## Discoveries
+
 ### Sokka Speaks the Most for Most of the Seasons
 
 Although Aang says the most lines overall, Sokka has the most lines for Season 2 and 3 individually and combined. Aang overcomes him with the inclusion of season 1.
@@ -53,7 +55,7 @@ Although Aang says the most lines overall, Sokka has the most lines for Season 2
 
 ### Honor is Not Zuko's Most Common Word
 
-Many viewers' impression of Zuko from his first appearances in season 1 is his desire to regain his honor. "I must capture the Avatar and regain my honor" is a well-known phrase of his. 
+Many viewers' impression of Zuko from his first appearances in season 1 is his desire to regain his honor. "I must capture the Avatar and regain my honor" is a well-known phrase of his.
 
 <img width="148" height="148" alt="image" src="https://github.com/user-attachments/assets/c545b1b2-cb4d-4295-b4ec-7749f91ebcdb" />
 
@@ -61,13 +63,13 @@ However, even with just season 1 selected, his most common word is "avatar" and 
 
 <img width="2175" height="1153" alt="image" src="https://github.com/user-attachments/assets/7bcd4861-523a-437b-836a-da5e7a8c9def" />
 
-But he does say it the most out of all the characters. 
+But he does say it the most out of all the characters.
 
 <img width="1356" height="712" alt="image" src="https://github.com/user-attachments/assets/1941d09b-bf95-4b62-90ec-1cbd9d2be8b6" />
 
 ## Assets
 
-Although it is subtle, we have a background image sourced from unsplash by Robynne O. It can be accessed https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk. 
+Although it is subtle, we have a background image sourced from unsplash by Robynne O. It can be accessed https://unsplash.com/photos/gray-rock-formations-iVYTAfsN9hk.
 
 <img width="1740" height="1161" alt="image" src="https://github.com/user-attachments/assets/150e956e-dee3-4377-b7eb-ecd2ce8242f8" />
 
@@ -103,9 +105,15 @@ Each of these can be selectable and be displayed in the character profiles.
 
 ### Phrase LifeCycle Explorer
 
-WHY NAME IT THAT
+The Phrase LifeCycle Explorer lets users search for any word or phrase and see how it is used across all 61 episodes of the show. It produces three outputs: a set of summary pills (first episode the phrase appeared, last episode, total mention count, and top speaker), a line chart plotting mentions per episode across the full series, and a horizontal bar chart showing the top 10 characters who said the phrase most.
 
-<img width="1357" height="1344" alt="Screenshot 2026-04-29 133229" src="https://github.com/user-attachments/assets/8d1dbced-9850-4952-833f-2ef11ec1234c" />
+Users can also toggle "related word forms," which uses suffix-based stemming so a search for "honor" also catches "honored," "honoring," and similar variants. Quick-access example chips ("honor," "destiny," "my cabbages," "Appa") are included to make the feature immediately inviting.
+
+Why it's included: The character profiles and word-cloud features show what characters say, but not when. Some of the most interesting questions about the show are temporal — does Zuko talk about honor more in season 1 than season 3? Does "destiny" peak at specific story beats? This feature answers those questions by giving any phrase a full narrative arc across the series.
+
+![Summary Pills](./images/ple_summary.png)
+![Line Graph](./images/ple_linegraph.png)
+![Horizontal Bar Graph](./images/ple_horizontalbar.png)
 
 ### Character Relationships
 
