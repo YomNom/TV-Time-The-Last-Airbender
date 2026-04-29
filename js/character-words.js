@@ -5,9 +5,9 @@
     "use strict";
 
     const ROSTER_MIN_LINES = 30;
-    const TOP_WORDS_FOR_CLOUD = 20; 
-    const TOP_WORDS_FOR_BARS = 5;
-    const TOP_PHRASES = 5;
+    const TOP_WORDS_FOR_CLOUD = 40;
+    const TOP_WORDS_FOR_BARS = 10;
+    const TOP_PHRASES = 8;
 
     // ATLA element-ish palette. Chosen to read clearly against the dark panel.
     const PALETTE = ["#f0a500", "#b1591a", "#3b82f6", "#10b981", "#a855f7", "#ef4444"];
