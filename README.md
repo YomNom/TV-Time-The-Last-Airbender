@@ -1,6 +1,6 @@
 # TV Time: The Last Airbender
 
-This project provides visualization of a text analysis done on transcripts for Avatar: The Last Airbender. these visualizations are visualized on a web page we made public on vercel. These transcripts were sourced from Kaggle. However, we have scripts that were made if you were to want to replicate this project and do the scraping yourself.
+This project provides visualization of a text analysis done on transcripts for Avatar: The Last Airbender. These visualizations are visualized on a web page we made public on vercel. The show is a beloved childhood show of the creators of this project and is still popular today with a sequel show and movie (don't mention the live actions). These transcripts were sourced from Kaggle. However, we have scripts that were made if you were to want to replicate this project and do the scraping yourself.
 
 We go through the scripts to see:  
 - How many characters appear in each episode 
@@ -79,15 +79,21 @@ The avatar logo was obtained from Wikipedia.
 
 ## Code Structure
 
-### Filter
+### Season Filter
 
-Users can filter data by season and show or just see the data for the show as a whole. Users can select one episode or > 1 season. However, only one episode can be selected at a time. 
+This filter enables users to filter the data by season for the two visuals directly under it. There are only three seasons, which is why we found a remove all button to be unneccessary. We still included show all because we believed there'd be more intent to do that. Also, the filter stops the user from not selecting any season. If only one season is selelected, the user can no longer deselect a season.
 
 https://github.com/user-attachments/assets/8982afd1-4caa-4ab2-8b0d-74c5490190c1
 
+We didn't include an episode filter because it left too much room in the character profile. We also didn't want to enable to user to select more than one episode because the time we wanted to work on this wasn't enough. It also was considered to be possibly tedious for the user. Should more work be put into this, it would be something to prioritize, maybe with a specialized view.
+
 ### Character Selection
 
+Here, the selection works also as a visual to show information about the overall cast of characters. You can see which episodes the characters are in and how many lines each character has. This visual is also a method where users can see who are major characters. They are listed in a vertically scrollable list by how many lines they have. The top being the most lines. You can also search for characters in the list.
+
 https://github.com/user-attachments/assets/b3e50bcf-a3d3-417b-b5e8-f700ca6d4f26
+
+Each of these can be selectable and be displayed in the character profiles.
 
 ### Character Profiles
 
