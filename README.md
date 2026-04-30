@@ -140,6 +140,8 @@ Once a character is selected from the Character Selection list, the Character Pr
 
 The word cloud sizes each word by frequency (with a tooltip showing the exact count on hover), while the bar chart view ranks the same data as a sortable horizontal list. Both share the same stop-word filtering so common filler ("the," "and," "you", etc.) doesn't drown out meaningful vocabulary. The common-phrases list pulls out 2-4 word sequences the character repeats at least three times, surfacing catchphrases and verbal tics that single-word counts miss.
 
+Library: the word cloud is laid out using d3 and d3-cloud.
+
 Why it's included: line counts tell you who talks the most, but not what they talk *about*. This view turns each character's dialogue into a quick fingerprint of their voice. Some examples include Zuko's fixation on "uncle" and "avatar," Sokka's sarcasm-heavy vocabulary, Iroh's tea references. Along with that, the season filter lets you watch that fingerprint shift as the show progresses.
 
 <img width="2189" height="1151" alt="Screenshot 2026-04-29 132329" src="https://github.com/user-attachments/assets/a81639c6-47fc-4c00-8f23-2f865f906ff3" />
