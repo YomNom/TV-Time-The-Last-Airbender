@@ -154,6 +154,10 @@ Why it's included: The character profiles and word-cloud features show what char
 
 ### Character Relationships
 
+The chord diagram shows how often the top 12 characters talk back and forth with each other. Each character gets a colored arc around the outside of the circle, and the ribbons in the middle connect pairs of characters who exchange dialogue. The thicker the ribbon, the more back-and-forth they have.
+
+There's also a dropdown to filter by a specific episode, so you can see which characters are actually in a given episode and how much they interact. By default it shows all episodes combined. This makes it easy to spot things like how much Zuko and Iroh talk compared to the rest of the cast, or which episode has the most interaction between two characters.
+
 <img width="1409" height="471" alt="Screenshot 2026-04-29 133404" src="https://github.com/user-attachments/assets/2edf0352-6a71-4f76-adc8-3af6e15a1ebd" />
 
 <img width="1357" height="1326" alt="Screenshot 2026-04-29 133353" src="https://github.com/user-attachments/assets/121f8306-dbcd-48f3-b449-836a07c7a10c" />
